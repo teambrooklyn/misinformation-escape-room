@@ -1,0 +1,29 @@
+{
+  "name": "Patient testimonials",
+  "puzzleText": {
+    "title": "There are a fair number of bot accounts out there, posting misleading information about Molina Bardhana. Many of these bot accounts even use computer generated images of people that don’t exist. We’ve found that there are certain tell-tale signs that a portrait is computer-generated, including:",
+    "message": "“You should filter out all the bot accounts that created the news articles about you. Look at their photos to find the fake people to report, and the real people who can help spread this information legitimately.”",
+    "main": [
+      "Figure out which of the images are computer-generated and which are not."
+    ],
+    "bullets": [
+      "Mismatched or asymmetrical accessories (like earrings or glasses) or clothing",
+      "Extra teeth",
+      "Distortions in the background, including in the people accompanying the subject",
+      "Distortions in the hair (for example air bubbles or hair growing in incorrect places or directions)"
+    ],
+    "time": "10:23",
+    "date": "Tuesday, February 8"
+  },
+  "images": {
+    "main": [{ "src": "/images/puzzle2/main.png", "alt": "alt" }],
+    "sub": [
+      { "src": "/images/puzzle2/part_1.png", "alt": "alt" },
+      { "src": "/images/puzzle2/part_2.png", "alt": "alt" },
+      { "src": "/images/puzzle2/part_3.png", "alt": "alt" },
+      { "src": "/images/puzzle2/part_4.png", "alt": "alt" }
+    ],
+    "backgroundImg": "/images/puzzle2/ipad.svg"
+  },
+  "backgroundColor": "#FFFFFF"
+}

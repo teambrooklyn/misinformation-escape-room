@@ -1,0 +1,44 @@
+@keyframes item-fade-in {
+    0% {opacity: 0; }
+    100% { flex: 1; opacity: 1; height: 20vh}
+}
+
+#hover-menu {
+    background-color: #FFE790;
+	height: 6vh;
+    transition: 120ms height linear, 120ms width linear, 120ms background-color linear;
+    box-shadow: "4px 4px 4px rgba(0, 0, 0, 0.25)";
+	border-radius: 6px;
+	transition: 120ms height linear, 120ms width linear, 120ms background-color linear;
+}
+
+#pwd-form {
+	height: 0;
+	opacity: 0;
+	transition: 240ms background-color linear;
+	font-size: 1.2em;
+	cursor: default;
+}
+
+#hover-menu:hover {
+    height: 20vh;
+    transition: 120ms background-color linear, 240ms height linear
+}
+
+#hover-menu:hover > #pwd-form {
+	animation: 2ms item-fade-in linear forwards;
+	animation-delay: 120ms;
+	transition: 120ms background-color linear;
+}
+
+#hover-menu:hover > #pwd-prompt {
+	display: none;
+	animation: 240ms item-fade-in linear forwards;
+	animation-delay: 120ms;
+	transition: 120ms background-color linear;
+}
+
+
+
+
+

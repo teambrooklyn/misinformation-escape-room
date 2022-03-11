@@ -1,0 +1,37 @@
+{
+  "name": "Doctor testimonial",
+  "puzzleText": {
+    "title": "",
+    "main": "How many likes does the biggest influencer have? You’ll need to solve the following equations to figure it out.",
+    "emojiGamePrompt": "Two icons next to one another with no operator between them signifies a two-digit number. It’s easiest to solve the equations in the order that they are presented below.",
+    "message":"“I need to get this information out to the general public. Of these influencers, who would be the best person to reach out so I can reach as many people as possible in the time I have left?”",
+    "emojiInputPrompt": "You may keep track of your work here"
+  },
+  "images": {
+    "emoji_math": { "src": "/images/puzzle4/emoji_math_2.png", "alt": "alt" },
+    "sub": [
+      { "src": "/images/puzzle4/1.jpg", "alt": "alt" },
+      { "src": "/images/puzzle4/2.jpg", "alt": "alt" },
+      { "src": "/images/puzzle4/3.jpg", "alt": "alt" },
+      { "src": "/images/puzzle4/4.jpg", "alt": "alt" },
+      { "src": "/images/puzzle4/5.jpg", "alt": "alt" }
+    ],
+    "inputBoxes": [
+      { "src": "/images/puzzle4/Asset 11.png", "alt": "open-mouth emoji" },
+      { "src": "/images/puzzle4/Asset 12.png", "alt": "hearts face emoji" },
+      { "src": "/images/puzzle4/Asset 13.png", "alt": "monocle emoji" },
+      { "src": "/images/puzzle4/Asset 14.png", "alt": "tear unhappy emoji" },
+      { "src": "/images/puzzle4/Asset 15.png", "alt": "open tounge closed eye emoji" },
+      { "src": "/images/puzzle4/Asset 16.png", "alt": "blue suprised emoji" },
+      { "src": "/images/puzzle4/Asset 17.png", "alt": "angry emoji" },
+      { "src": "/images/puzzle4/Asset 18.png", "alt": "thinking emoji" },
+      { "src": "/images/puzzle4/Asset 19.png", "alt": "laughing emoji" },
+      { "src": "/images/puzzle4/Asset 20.png", "alt": "smiling happy emoji" }
+    ]
+  },
+  "background": "/images/puzzle4/pc.svg",
+  "postBox": "/images/puzzle4/post_box.svg",
+  "postImg": "/images/puzzle4/post_img.svg",
+  "siteBg": "/images/puzzle4/site_bg.svg",
+  "panel": "/images/puzzle4/panel.svg"
+}

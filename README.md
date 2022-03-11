@@ -2,13 +2,13 @@
 This repository houses code for the misinformation escape room project.
 
 ## About the project
-UNDER CONSTRUCTION
+This is an Olympics-themed escape room as part of the UW iSchool's Capstone course and the UW iSchool's Misinformation Escape Room project. This code is based on previous code in the Misinformation Escape Room project.
 
 ## How to run the escape room
-UNDER CONSTRUCTION
+From the root directory, run "npm start".
 
 ## How to contribute to this repository
-UNDER CONSTRUCTION
+Our project is currently not open to contributions as the team is still completing an initial version of the escape room. However, please reach out to any of us to inquire about the project or discuss future direction!
 
 To contact us, feel free to reach us at: <br>
 

@@ -1,0 +1,16 @@
+<svg width="1371" height="899" xmlns="http://www.w3.org/2000/svg" fill="none">
+ <defs>
+  <linearGradient y2="1" x2="0.5" y1="0" x1="0.5" id="paint0_linear">
+   <stop stop-color="#DB6BD0"/>
+   <stop stop-color="#71B7C7" offset="0.9999"/>
+   <stop stop-opacity="0" stop-color="#69E4FF" offset="1"/>
+   <stop stop-opacity="0" stop-color="#69E4FF" offset="1"/>
+  </linearGradient>
+ </defs>
+ <g>
+  <title>Layer 1</title>
+  <rect id="svg_1" fill="black" rx="45" height="899" width="1371"/>
+  <rect id="svg_2" fill="url(#paint0_linear)" rx="30" height="826" width="1302" y="36" x="35"/>
+  <path id="svg_3" d="m35,66c0,-16.30137 13.69863,-30 30,-30l1242,0c16.30137,0 30,13.69863 30,30l0,766c0,16.30137 -13.69863,30 -30,30l-1242,0c-16.30137,0 -30,-13.69863 -30,-30l0,-766z" opacity="undefined" fill="#e1eaf1"/>
+ </g>
+</svg>

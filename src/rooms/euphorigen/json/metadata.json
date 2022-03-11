@@ -1,0 +1,33 @@
+{
+  "title": "La'Ann Winter Olympics",
+  "subtitle": "Welcome to Escape Room",
+  "abstract": "It’s the year 2050 and the country La’Ann are finally the hosts of the 2050 Winter Olympics!\nThey have been waiting for this moment for years and are excited for their top athlete, Molina Bardhana, to take gold in the Women’s Ski Cross event. The La’Ann committee and Molina’s coach have been giving their full support to Molina and helping her inside and outside of training.\nUnfortunately, during qualifications, Justine Kristoff of Russio placed first with Molina falling seconds behind into second. Everyone was rooting for Justine as she was the first place contender for the Ski Cross event; however, in the finals, Justine fell! She apparently fell because she had food poisoning... Although, her fall meant that Molina was able to place first and take home the gold!\nWhile Molina is happy about her win, she has been receiving some heat from the media that she food poisoned Justine before the finals. Word got around and even the La’Ann committee are disappointed to hear that Molina cheated. Molina and her coach know that this isn’t true though and are trying to clear her name. Apparently in 45 minutes, the La’Ann committee will have a meeting to discuss whether to take away Molina’s gold medal. Molina needs to unconver the truth fast and spread the word!",
+  "terms": "This escape room was developed for educational and research purposes by the University of Washington. By clicking “Enter” you are consenting to have your participation be used for research purposes by the University of Washington. Your participation will remain completely anonymous and is completely voluntary.",
+  "policy": {
+    "text": "For further information about the University of Washington's privacy policy, click here:",
+    "url": "https://privacy.uw.edu/policies"
+  },
+  "logo": {
+    "TASCHA": "/images/logo/tascha.png",
+    "CIP": "/images/logo/cip.png",
+    "GAMER": "/images/logo/gamer.png",
+    "PB": "/images/logo/pb.png"
+  },
+  "script": [
+    "Hi Molina, hope you’re doing well and recovering after your ski cross final.\n\nI know you’re physically exhausted from training and competing, but as your coach, I need to make sure you’re ready to clear your name. You and I both know that you weren’t involved with Justine’s untimely exit from the race. But now that you’ve won your gold here in your home nation, let’s show everyone that you’re not just some shady Olympic cheater.\n\nFirst thing I think you should do, is take a look at all those articles about you on Google. Looks like some of them are writing lies about you and the Olympics. You should take a look at them and try to see if you can report the fake news articles.",
+    "Congratulations on reporting the fake news articles, Molina! Hopefully we will be able to take those articles down soon... Now, you should take a look on your social media because you’ll notice there’s a number of bot accounts that are posting misleading information about you. Some of their profile pictures look fake though... so I’ve put their pictures from each of your socials into separate folders for you to investigate (in your photos). Take a look at them and try to see if you can distinguish a bot account from a real user."
+  ],
+  "author": "Investigator Pearl",
+  "upload": {
+    "fake": "https://www.youtube.com/embed/hFWO6A52au8",
+    "real": "https://www.youtube.com/embed/qe3z5xNahUg"
+  },
+  "ending": ["Congratulations! ", "You solved the escape room."],
+  "misc": {
+    "landing": "/images/lokisloop.jpg",
+    "dialog": "/images/message/dialog.png",
+    "dialog_in_person": "/images/message/deepfake-inperson.png",
+    "notification": "/images/message/notification.png",
+    "solution": "/images/puzzle4/3.png"
+  }
+}

@@ -1,0 +1,32 @@
+{
+    "navItem": [{
+        "top": "-25",
+        "left": "360",
+        "size": {
+            "width": "125",
+            "height": "90"
+        }
+    },
+    {
+        "top": "20",
+        "left": "485",
+        "size": {
+            "width": "15",
+            "height": "60"
+        }
+    }],
+    "MessageBubble": {
+        "top": "-115",
+        "left": "450"
+    },
+    "lightingPosition": [
+        {
+            "top": "-95",
+            "left": "460"
+        },
+        {
+            "top": "-55",
+            "left": "520"
+        }
+    ]
+}

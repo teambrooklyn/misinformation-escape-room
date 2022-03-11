@@ -1,0 +1,22 @@
+
+#folder {
+    font-size: 7vh;   
+}
+
+#lock {
+    position: absolute;
+    top: 3.1vh;
+    z-index: 10;
+    width: 3vh;
+    height: 3vh;
+}
+
+.imessage {
+    width: 550px;
+    height: 440px;
+    background-color: rgb(0, 0, 0);
+    position: relative;
+    border-radius: 10px;
+}
+
+
