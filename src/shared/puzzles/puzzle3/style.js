@@ -14,36 +14,37 @@ const styles = () => ({
         backgroundRepeat: "no-repeat"
     },
     contentContainer: {
-        color: "#0085C7",
-        backgroundColor: "white",
+        color: "black",
+        backgroundColor: "#EBE1BC",
         padding: "3em 1em 3em 1em"
     },
     messageAndNodeContainer: {
+        backgroundColor: "white",
         maxWidth: "700px",
         marginRight: "2em"
     },
     message: {
-        color: "white",
-        backgroundColor: "#0085C7",
-        boxShadow: "4px 4px 4px rgba(0, 0, 0, 0.25)",
+        color: "black",
+        backgroundColor: "white",
         width: "558px",
         fontFamily: "Helvetica Neue",
         fontStyle: "normal",
         fontWeight: "normal",
         fontSize: "18px",
         lineHeight: "25px",
+        marginTop: "10px"
     },
     passwordAndPromptContainer: {
         maxWidth: "600px"
     },
     textField: {
-        width:"40px",
+        width: "40px",
         margin: "-6px 10px 0px 10px"
     },
     redText: {
         fontFamily: 'Helvetica Neue',
         fontWeight: "bold",
-        color: "#0085C7"
+        color: "black"
     },
     textContainer: {
         display: "flex",
@@ -53,7 +54,7 @@ const styles = () => ({
     },
     passwordForm: {
         boxShadow: "4px 4px 4px rgba(0, 0, 0, 0.25)",
-        backgroundColor: "#0085C7",
+        backgroundColor: "#312700",
         width: "350px",
         height: "213px"
     }

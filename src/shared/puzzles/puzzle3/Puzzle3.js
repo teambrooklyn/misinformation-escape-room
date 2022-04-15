@@ -52,7 +52,7 @@ const Puzzle3 = () => {
                     }
                   })
                   return (
-                    <line key={"line-"+key} x1={xStart} y1={yStart} x2={xEnd} y2={yEnd} stroke="#0085C7" strokeWidth="5"/>
+                    <line key={"line-"+key} x1={xStart} y1={yStart} x2={xEnd} y2={yEnd} stroke="#B59000" strokeWidth="5"/>
                   )
                 })}
               </svg>
@@ -101,7 +101,7 @@ const Puzzle3 = () => {
 
 const Name = (props) => {
   return (
-    <div style={{width:"60px",height:"60px",borderRadius:"40px",backgroundColor:"#0085C7", justifyContent:"center",alignItems:"center",textAlign:"center", marginLeft:`${props.x}`,marginTop:`${props.y}`, position:"absolute",display:"flex"}}>
+    <div style={{width:"60px",height:"60px",borderRadius:"40px",backgroundColor:"#B59000", justifyContent:"center",alignItems:"center",textAlign:"center", marginLeft:`${props.x}`,marginTop:`${props.y}`, position:"absolute",display:"flex"}}>
       <span style={{marginBottom:"3px",color:"white"}}>{props.name}</span>
     </div>
   );

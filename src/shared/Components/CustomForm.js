@@ -38,7 +38,7 @@ const styles = (theme) => ({
 
 const useStyles = makeStyles(styles);
 
-const passwords = ["scandal", "lies", "media", "9817"]
+const passwords = ["scandal", "lies", "betray", "9817"]
 
 const CustomForm = (props) => {
   const [password, setPassword] = useState("");
@@ -127,6 +127,7 @@ const CustomForm = (props) => {
                 size="medium"
                 fullWidth
                 color="primary"
+                background="#DF0024"
                 className={classes.margin}
               >
                 Confirm
@@ -166,6 +167,7 @@ const CustomForm = (props) => {
               size="medium"
               fullWidth
               color="primary"
+              background="#DF0024"
               className={classes.margin}
             >
               Confirm
@@ -205,6 +207,7 @@ const CustomForm = (props) => {
               size="medium"
               fullWidth
               color="primary"
+              background="#DF0024"
               className={classes.margin}
             >
               Confirm
