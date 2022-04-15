@@ -7,7 +7,7 @@
 	.st1{display:inline;fill:#FFFFFF;}
 	.st2{display:inline;}
 	.st3{display:inline;fill:none;stroke:#090000;stroke-miterlimit:10;}
-	.st4{fill:#FFFFFF;}
+	.st4{fill:#FFFFFF;stroke:#000000;}
 </style>
 <g id="Layer_3" class="st0">
 	<polygon class="st1" points="28,42.8 35.7,25 43.5,21.2 52.3,13.1 55.6,16 58.5,16 61.8,21.4 69.2,16.2 76.1,16.6 86.9,22.2 
