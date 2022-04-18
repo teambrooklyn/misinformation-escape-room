@@ -18,10 +18,14 @@ const styles = () => ({
   timeAndMessageContainer: {
     height: "100px",
     marginBottom: "1em",
-    marginTop: ".5em"
+    marginTop: "1em",
+    position: "relative",
+    right: "55px",
+    top: "30px"
   },
   timeContainer: {
-    textAlign: "left",  zmarginRight: "100px"
+    textAlign: "left",  
+    zmarginRight: "100px"
   },
   messageContainer: {
     width: "500px",
@@ -32,17 +36,24 @@ const styles = () => ({
   passwordFormContainer: {
     width: "280px",
     marginLeft: "2em",
-    marginRight: "1em"
+    marginRight: "1em",
+    position: "relative",
+    top:"30px"
+
   },
   promptContainer: {
     width: "700px",
+    position: "relative",
+    top: "30px"
   },
   textContainer: {
     background: "rgba(255, 255, 255, 0.5)",
     boxShadow: "0px 1px 20px rgba(0, 0, 0, 0.1)",
     borderRadius: "25px",
     padding: "20px",
-    margin: "30px 0px 30px 0px"
+    margin: "30px 0px 30px 0px",
+    color:"#0085C7",
+    marginBottom:"60px"
   },
   formButton: {
     width: "257px",
@@ -52,7 +63,10 @@ const styles = () => ({
     borderRadius: "15px",
     border: "none",
     color: "white",
-    cursor: "pointer"
+    cursor: "pointer",
+    fontSize:"1.5rem",
+    position: "relative",
+    top: "10px"
   },
   textField: {
     float:"left",
@@ -77,7 +91,7 @@ const styles = () => ({
   bodyText : {
     fontSize: "15px",
     color: "black",
-    margin: "40px 10px 0 10px",
+    margin: "40px 10px 0 10px"
   },
   fromText: {
     color: "rgb(245, 245, 245)",
@@ -86,6 +100,14 @@ const styles = () => ({
     fontWeight: "500",
     fontSize: "1.6vh"
   },
+  letterbox: {
+    position: "relative",
+    left:"100px"
+  },
+  navbar: {
+    position:"relative",
+    bottom:"300px"
+  }
 });
 
 export default styles;
