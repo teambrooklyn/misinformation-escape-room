@@ -24,17 +24,17 @@ const Puzzle2 = (props) => {
 
   const [isOpen, setIsOpen] = useState(false)
 
+  const data = ['Twitter', 'Reddit', 'Instagram', 'Facebook']
   return (
     <Grid container justifyContent="center" alignItems="center" className={classes.backgroundContainer}>
       <Grid className={classes.backgroundImgContainer}>
-
+      {/* <img className="navbar" src={"/images/puzzle2/navbar.png"} width="1350px" height="65px" alt="nav bar"></img> */}
         <Grid container direction="column" justifyContent="center" alignItems="center" wrap="nowrap" style={{width: "1200px", padding: "0 3em 0 3em"}}>
           <Grid container direction="row" justifyContent="space-evenly" alignItems="center" wrap="nowrap" className={classes.timeAndMessageContainer}>
             <div className={classes.timeContainer}>
               <p style={{font: "Helvetica Neue", fontWeight: "400", fontSize: "40px"}}>{puzzle2.puzzleText.time}</p>
               <p style={{marginTop: "-30px"}}>{puzzle2.puzzleText.date}</p>
             </div>
-
             <div className={classes.messageContainer}>
               <img className={classes.logo} src={"/images/message/imessagelogo.png"} alt="imessagelogo"></img>
               <div className={classes.messageText}>Coach</div>
@@ -80,25 +80,16 @@ const Puzzle2 = (props) => {
 
 
               <Grid>
-                <Grid container spacing={2} direction="row" justifyContent="center" alignItems="center" style={{marginTop:"-25px"}}>
+                <Grid container spacing={2} display="" direction="row" justifyContent="center" alignItems="center" style={{marginTop:"-25px"}}>
                   {images.sub.map(({ src }, key) => (
                     <div key={key} style={{marginLeft:"10px",marginRight:"10px"}}>
                       <div style={{marginLeft:"20px"}}>
                         <Typography
                           component="div"
                           variant="body1"
-                          style ={{paddingLeft:"2px"}}>Letter {key + 1}
+                          style ={{paddingLeft:"2px", color:"#009F3D", fontWeight:"bold"}}>{data[key]}
                         </Typography>
-                        <TextField
-                          variant="outlined"
-                          label=""
-                          size="medium"
-                          inputProps={{ maxLength: 1 }}
-                          className={classes.textField}
-                          onBlur={event => {
-                            handleTextBoxChange(event, key)
-                          }}
-                        />
+                        <img className="folder" src={"/images/puzzle2/folder.png"} width="75px" height="70px" alt="folder image"></img>
                       </div>
                       <CustomLightbox part={key} src={public_url + src} />
                     </div>
