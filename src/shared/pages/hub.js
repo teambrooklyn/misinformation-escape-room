@@ -40,6 +40,9 @@ const Hub = () => {
   let keys = [...mapping.keys()];
 
   useEffect(() => {
+    /*
+    TO BE IMPLEMENTED WHEN ADDING THE VIDEO
+    
     if (level === 5 && window.location.pathname.split("/")[3] === undefined) {
       setOpenMsgBubble(false)
     } else if (preUploadVideoWatched) {
@@ -49,6 +52,9 @@ const Hub = () => {
       setOpenMsgBubble(true)
       setDialogClicked(false)
     }
+    */
+    setOpenMsgBubble(true)
+    setDialogClicked(false)
   },[level, preUploadVideoWatched])
 
   const handleCloseMessageDialog = () => {

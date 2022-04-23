@@ -16,7 +16,7 @@ const { abstract, terms, policy} = meta
 
 const useStyles = makeStyles(styles);
 
-const entryPassword = "MolinaBardhanaGold"
+const entryPassword = "Gold"
 
 const WelcomeCommon = (props) => {
   const classes = useStyles();
@@ -39,6 +39,19 @@ const WelcomeCommon = (props) => {
       body.password = "LokiApril28";
     }
 
+    /*
+    ///////////////////////////////////////////////////////////////////////////////////////////
+    setWithExpiry("level", 1, 7200000)
+    setWithExpiry("password", true, 7200000)
+
+    //redirect to game (laptop screen)
+    history.push({
+      pathname: '/puzzles',
+      state: { password: true }
+    });
+    ///////////////////////////////////////////////////////////////////////////////////////////
+    */
+   
     setTimeout(() => {
     fetch(`${process.env.REACT_APP_API_URL}/sessions`, {
         method: 'post',

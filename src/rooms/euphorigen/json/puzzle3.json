@@ -1,92 +1,74 @@
 {
-  "name": "Social Media Tracing",
+  "name": "Voicemails",
   "puzzleText": {
-    "title": "Figure out how the misinformation spread to get to the next step. You’ll want to trace how each story below spread individually, rather than all of them together",
     "main": [
-      "Paul shared with Nate, who shared with Josh, who shared with Taylor, who shared with Maddy, who shared with Paul",
-      "Jules shared with Nate, who shared with Taylor, who shared with Cal, who shared with Taylor, who shared with Paul, who shared with Cassie",
-      "Andrew shared with Maddy, who sared with Taylor, who shared with Steph",
-      "Steph shared with Nate, who shared with Grace, who shared with Taylor, who shared with Cal",
-      "Paul shared with Cindy, who shared with Jason, who shared with Steph, who shared with Paul, who shared with Peter",
-      "Nate shared with Josh, who shared with Jules, who shared with Cindy"
-    ]
-  },
-  "message": "Oh no! The video you shared is a deep fake video! You shouldn’t have shared it! Now the misinformation is spreading like wildfire on social media. The researcher who contacted you wants you to trace theinformation pathways to try to stop this!",
-  "data": {
-    "nodes": [
-      { "id": "Krystal", "x":100, "y":0 },
-      { "id": "Nate", "x":350, "y":0 },
-      { "id": "Jules", "x":600, "y":0 },
-      { "id": "Sarah", "x":0, "y":100 },
-      { "id": "Allie", "x":200, "y":100 },
-      { "id": "Grace", "x":500, "y":100 },
-      { "id": "Andrew", "x":100, "y":200 },
-      { "id": "Taylor", "x":275, "y":250 },
-      { "id": "Josh","x":400, "y":175},
-      { "id": "Cal", "x":600, "y":275 },
-      { "id": "Cindy", "x":100, "y":350 },
-      { "id": "Paul", "x":225, "y":400 },
-      { "id": "Maddy", "x":500, "y":350 },
-      { "id": "Jason", "x":50, "y":450},
-      { "id": "David", "x":350, "y":500 },
-      { "id": "Cassie", "x":600, "y":500 },
-      { "id": "Steph", "x":200, "y":550 },
-      { "id": "Peter", "x":300, "y":575 }
+      "All of these voicemails all of a sudden! But something seems fishy here... although all of these voicemails make themselves sound urgent, some of these voicemails could be based completely in opinions without any facts supporting them! You may want to look for messages that are:",
+      "Give them a listen and lets figure out who’s really trying to get ahold of Molina!"
     ],
-    "links": [
-      { "source": "Krystal", "target": "Nate"},
-      { "source": "Krystal", "target": "Allie"},
-      { "source": "Krystal", "target": "Andrew"},
-      { "source": "Krystal", "target": "Sarah"},
-      { "source": "Nate", "target": "Cal"},
-      { "source": "Nate", "target": "Jules"},
-      { "source": "Nate", "target": "Allie"},
-      { "source": "Nate", "target": "Taylor"},
-      { "source": "Nate", "target": "Josh"},
-      { "source": "Nate", "target": "Grace"},
-      { "source": "Jules", "target": "Cal"},
-      { "source": "Jules", "target": "Grace"},
-      { "source": "Sarah", "target": "Allie"},
-      { "source": "Sarah", "target": "Taylor"},
-      { "source": "Sarah", "target": "Andrew"},
-      { "source": "Sarah", "target": "Jason"},
-      { "source": "Allie", "target": "Grace"},
-      { "source": "Allie", "target": "Josh"},
-      { "source": "Allie", "target": "Paul"},
-      { "source": "Grace", "target": "Josh"},
-      { "source": "Grace", "target": "Maddy"},
-      { "source": "Grace", "target": "Cal"},
-      { "source": "Andrew", "target": "Taylor"},
-      { "source": "Andrew", "target": "Cindy"},
-      { "source": "Taylor", "target": "Cindy"},
-      { "source": "Taylor", "target": "Paul"},
-      { "source": "Taylor", "target": "Maddy"},
-      { "source": "Taylor", "target": "Cal"},
-      { "source": "Taylor", "target": "Josh"},
-      { "source": "Taylor", "target": "David"},
-      { "source": "Josh", "target": "Maddy"},
-      { "source": "Josh", "target": "Cal"},
-      { "source": "Cal", "target": "Maddy"},
-      { "source": "Cal", "target": "Cassie"},
-      { "source": "Cindy", "target": "Jason"},
-      { "source": "Cindy", "target": "Steph"},
-      { "source": "Cindy", "target": "Paul"},
-      { "source": "Cindy", "target": "Peter"},
-      { "source": "Paul", "target": "Maddy"},
-      { "source": "Paul", "target": "Cassie"},
-      { "source": "Paul", "target": "Steph"},
-      { "source": "Paul", "target": "Peter"},
-      { "source": "Maddy", "target": "David"},
-      { "source": "Maddy", "target": "Cassie"},
-      { "source": "Jason", "target": "David"},
-      { "source": "Jason", "target": "Steph"},
-      { "source": "David", "target": "Cassie"},
-      { "source": "Steph", "target": "Peter"}
+    "bullets": [
+      "Vague in language and details",
+      "Based in rumors",
+      "More sensationalist"
     ]
   },
-  "images": {
-    "main": [{ "src": "/images/puzzle3/main.png", "alt": "alt" }],
-    "sub": [{ "src": "/images/puzzle3/1.png", "alt": "alt" }]
-  },
-  "background": "/images/puzzle3/whiteboard_short.svg"
+  "calls": [
+    {
+      "number": "+403 (340) 392-1718",
+      "location": "Misala, La’Ann",
+      "date": "Yesterday",
+      "duration": "00:38",
+      "audio_file": "/audio/puzzle3/voicemail_1.mp3",
+      "transcription": "“Hi Molina, this is the Headmaster of the La’Ann Olympics. We are reaching out to you to notify you of your summons to the Olympic Advisory board meeting. Due to the urgency of the meeting, please call +403 (340) 392-1718 as soon as possible to confirm your intent to attend this meeting. Additionally, please prepare your government-issued ID and social security number to verify your identity over the phone. If we do not hear from you in 24 hours, you will be disqualified and banned. Thank you.”"
+    },
+    {
+      "number": "+403 (502) 101-5617",
+      "location": "Gorsha, La’Ann",
+      "date": "Yesterday",
+      "duration": "00:20",
+      "audio_file": "/audio/puzzle3/voicemail_2.mp3",
+      "transcription": "“Hi, this is Timothee Holland, the lead investigator for the International Olympic Committee. I believe we spoke yesterday. Please rest assured - I am not calling to prosecute you, but just to ask you some questions about some new evidence we found in the case regarding your coach’s fingerprints on Justine Kristoff’s equipment. Call me back when you can.”"
+    },
+    {
+      "number": "+403 (104) 270-1209",
+      "location": "Senaton, La’Ann",
+      "date": "Yesterday",
+      "duration": "00:21",
+      "audio_file": "/audio/puzzle3/voicemail_3.mp3",
+      "transcription": "“Hi, it’s Isaac Porza rooting for you back home in Senaton! You’ve come so far since our days training together. However, I’ve gotten word that the Olympic Advisory board has some future penalties in store… I didn’t hear what specifically, but that’s scary! Don’t remember where I heard it either… but I hope you’re holding up!”"
+    },
+    {
+      "number": "+403 (340) 143-1219",
+      "location": "Misala, La’Ann",
+      "date": "Yesterday",
+      "duration": "00:24",
+      "audio_file": "/audio/puzzle3/voicemail_4.mp3",
+      "transcription": "“Molina, sweetie, it’s your aunt. I know you must be super stressed with all the drama, but I wanted to call to tell you that you and the whole La’Ann Olympic Committee could be thrown in international prison for up to 30 years! I read it on Facebook, and I immediately panicked! I don’t want you to go to jail, but I thought I would at least tell you first. Take care sweetie, praying for you.”"
+    },
+    {
+      "number": "+403 (340) 253-9805",
+      "location": "Misala, La'Ann",
+      "date": "Yesterday",
+      "duration": "00:11",
+      "audio_file": "/audio/puzzle3/voicemail_5.mp3",
+      "transcription": "“Dear customer, this is a message from the Misala City Pharmacy notifying you that your prescription is ready for pick-up. Please review your email for a confirmation on the pick-up details. Thank you.”"
+    },
+    {
+      "number": "+403 (414) 607-9111",
+      "location": "Lacharta, La’Ann",
+      "date": "Yesterday",
+      "duration": "00:14",
+      "audio_file": "/audio/puzzle3/voicemail_6.mp3",
+      "transcription": "“Molina, I can’t believe you and the nation of La’Ann! I’ve heard from someone that the La’Ann athletes have had a history of sabotage in the Olympic Village since 2034. I also heard they have footage of you sneaking around the athletes’ quarters. You should be ashamed.”"
+    },
+    {
+      "number": "+403 (502) 477-4020",
+      "location": "Gorsha, La’Ann",
+      "date": "Yesterday",
+      "duration": "00:36",
+      "audio_file": "/audio/puzzle3/voicemail_7.mp3",
+      "transcription": "“Molina! This is Professor Iskabov from your alma mater. I got your number from one of your old professors. I needed to contact you because my lab has been doing research recently on the same chemical traces found in Justine’s bloodstream after the race. My lab and a few others had previously published some papers around the chemical and its usage - lemme tell you, it’s not easy to obtain. You need some sort of special governmental clearance to get the chemical, much higher clearance than you could possibly have. I’ll send you the links to some scholarly articles on the chemical for your review. Call me back if you have any questions! I believe in you.”"
+    }
+  ],
+  "background": "/images/puzzle3/bg.png",
+  "popup": ""
 }

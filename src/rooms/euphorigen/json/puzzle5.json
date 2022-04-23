@@ -1,0 +1,37 @@
+{
+  "name": "Emoji math",
+  "puzzleText": {
+    "title": "",
+    "main": "How many likes does the biggest influencer have? You’ll need to solve the following equations to figure it out.",
+    "emojiGamePrompt": "Two icons next to one another with no operator between them signifies a two-digit number. It’s easiest to solve the equations in the order that they are presented below.",
+    "message": "“You need to get this information out to the general public! Of these athletes, who would be the best person to reach as many people as possible in the time we have left?”",
+    "emojiInputPrompt": "You may keep track of your work here"
+  },
+  "images": {
+    "emoji_math": { "src": "/images/puzzle5/emoji_math.png", "alt": "alt" },
+    "sub": [
+      { "src": "/images/puzzle5/1.png", "alt": "alt" },
+      { "src": "/images/puzzle5/2.png", "alt": "alt" },
+      { "src": "/images/puzzle5/3.png", "alt": "alt" },
+      { "src": "/images/puzzle5/4.png", "alt": "alt" },
+      { "src": "/images/puzzle5/5.png", "alt": "alt" }
+    ],
+    "inputBoxes": [
+      { "src": "/images/puzzle5/Asset 11.png", "alt": "open-mouth emoji" },
+      { "src": "/images/puzzle5/Asset 12.png", "alt": "hearts face emoji" },
+      { "src": "/images/puzzle5/Asset 13.png", "alt": "monocle emoji" },
+      { "src": "/images/puzzle5/Asset 14.png", "alt": "tear unhappy emoji" },
+      { "src": "/images/puzzle5/Asset 15.png", "alt": "open tounge closed eye emoji" },
+      { "src": "/images/puzzle5/Asset 16.png", "alt": "blue suprised emoji" },
+      { "src": "/images/puzzle5/Asset 17.png", "alt": "angry emoji" },
+      { "src": "/images/puzzle5/Asset 18.png", "alt": "thinking emoji" },
+      { "src": "/images/puzzle5/Asset 19.png", "alt": "laughing emoji" },
+      { "src": "/images/puzzle5/Asset 20.png", "alt": "smiling happy emoji" }
+    ]
+  },
+  "background": "/images/puzzle5/fb_bg.png",
+  "postBox": "/images/puzzle5/post_box.svg",
+  "postImg": "/images/puzzle5/post_img.svg",
+  "siteBg": "/images/puzzle5/site_bg.svg",
+  "panel": "/images/puzzle5/panel.svg"
+}

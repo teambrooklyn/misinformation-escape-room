@@ -44,9 +44,7 @@ const Puzzle2 = (props) => {
           </Grid>
 
           <Grid container direction="row" justifyContent="center" alignItems="center" wrap="nowrap">
-
             <Grid container justifyContent="center" alignItems="center" direction="column" className={classes.passwordFormContainer}>
-
               <Grid container justifyContent="center" alignItems="center" direction="column" className={classes.textContainer} style={{width: "250px", height: "300px"}}>
                 <CustomForm id={3} password={password}/>
               </Grid>
