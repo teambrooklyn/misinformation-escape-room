@@ -2,110 +2,62 @@
 const puzzle4 = require("../../../rooms/euphorigen/json/puzzle4.json");
 
 const styles = () => ({
-  background: {
-    backgroundColor: "#E5E5E5",
-    height: "140vh !important"
-  },
-  backgroundImg: {
-    padding: " 4em 8em 8em 4em",
-    background: `url(${puzzle4.background})`,
-    backgroundPosition: "center top",
-    backgroundRepeat: "no-repeat",
-    backgroundSize: "contain",
-  },
-  content: {
-    margin: "-2em -2em 0 0"
-  },
-  messageNote: {
-    background: `url(${puzzle4.panel})`,
-    width: "304px",
-    height: "234px",
-    backgroundPosition: "center top",
-    backgroundRepeat: "no-repeat",
-    backgroundSize: "contain",
-    fontFamily: "Helvetica Neue",
-    fontStyle: "normal",
-    fontWeight: "normal",
-    fontSize: "18px",
-    lineHeight: "25px",
-    letterSpacing: "0.07px",
-    marginRight: "-3em",
-    marginTop: "-18em",
-    marginLeft: "4em",
-    zIndex: "1"
-  },
-  window: {
-    background: `url(${puzzle4.siteBg})`,
-    backgroundRepeat: "no-repeat",
-    backgroundPosition: "right top",
-    width: "690px",
-    height: "729px",
-    position: "relative"
-  },
-  galleryContainer: {
-    position: "absolute",
-    top: "55px",
-    left: "50px",
-  },
-  postOne: {
-    background: `url(${puzzle4.postBox})`,
-    backgroundPosition: "center top",
-    backgroundRepeat: "no-repeat",
-    backgroundSize: "contain",
-    width: "570px",
-    height: "143px",
-    position: "absolute",
-    top: "180px",
-    left: "46px",
-  },
-  postOneTextBox: {
-    position: "absolute",
-    top: "20px",
-    right: "10px",
-    width: "470px",
-    fontFamily: "Helvetica Neue",
-    fontStyle: "normal",
-    fontWeight: "normal",
-    fontSize: "15px",
-    lineHeight: "25px",
-  },
-  postTwo: {
-    position: "absolute",
-    top: "330px",
-    left: "50px",
-    background: `url(${puzzle4.postImg})`,
-    backgroundPosition: "left top",
-    backgroundRepeat: "no-repeat",
-    width: "1000px",
-    height: "390px",
-  },
-  postTwoTextBox: {
-    position: "absolute",
-    top: "20px",
-    left: "80px",
-    width: "420px",
-    fontFamily: "Helvetica Neue",
-    fontStyle: "normal",
-    fontWeight: "normal",
-    fontSize: "15px",
-    lineHeight: "25px",
-  },
-  imageContainer: {
-    position: "absolute",
-    top: "150px",
-    left: "20px",
-  },
-  textField: {
-    width:"100px",
-    height: "2px",
-    marginTop:"-13px"
-  },
-  contentBg: {
-    backgroundColor: "rgba(112, 112, 112, 0.5)",
-    borderRadius: "14px",
-    backgroundBlendMode: "luminosity",
-    padding: "1em 1em 1em 1em"
-  }
-  });
+    backgroundContainer: {
+        backgroundColor: "#E5E5E5",
+        height: "140vh !important"
+    },
+    backgroundImgContainer: {
+        padding: "0em 3em 4em 3em",
+        background: `url(${puzzle4.images.backgroundImg})`,
+        backgroundSize: "contain",
+        backgroundPosition: "center top",
+        backgroundRepeat: "no-repeat"
+    },
+    contentContainer: {
+        color: "black",
+        backgroundColor: "#EBE1BC",
+        padding: "3em 1em 3em 1em"
+    },
+    messageAndNodeContainer: {
+        backgroundColor: "white",
+        maxWidth: "700px",
+        marginRight: "2em"
+    },
+    message: {
+        color: "black",
+        backgroundColor: "white",
+        width: "558px",
+        fontFamily: "Helvetica Neue",
+        fontStyle: "normal",
+        fontWeight: "normal",
+        fontSize: "18px",
+        lineHeight: "25px",
+        marginTop: "10px"
+    },
+    passwordAndPromptContainer: {
+        maxWidth: "600px"
+    },
+    textField: {
+        width: "40px",
+        margin: "-6px 10px 0px 10px"
+    },
+    redText: {
+        fontFamily: 'Helvetica Neue',
+        fontWeight: "bold",
+        color: "black"
+    },
+    textContainer: {
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+        alignItems: "center",
+    },
+    passwordForm: {
+        boxShadow: "4px 4px 4px rgba(0, 0, 0, 0.25)",
+        backgroundColor: "#312700",
+        width: "350px",
+        height: "213px"
+    }
+});
 
-  export default styles;
+export default styles;

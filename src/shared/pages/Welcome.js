@@ -39,6 +39,7 @@ const WelcomeCommon = (props) => {
       body.password = "LokiApril28";
     }
 
+    /*
     ///////////////////////////////////////////////////////////////////////////////////////////
     setWithExpiry("level", 1, 7200000)
     setWithExpiry("password", true, 7200000)
@@ -49,7 +50,8 @@ const WelcomeCommon = (props) => {
       state: { password: true }
     });
     ///////////////////////////////////////////////////////////////////////////////////////////
-
+    */
+   
     setTimeout(() => {
     fetch(`${process.env.REACT_APP_API_URL}/sessions`, {
         method: 'post',

@@ -1,69 +1,37 @@
 {
-  "name": "Voicemails",
+  "name": "Emoji math",
   "puzzleText": {
     "title": "",
-    "first_message": "All of these voicemails all of a sudden! But something seems fishy here... although all of these voicemails make themselves sound urgent, some of these voicemails could be based completely in opinions without any facts supporting them! You may want to look for messages that are:",
-    "second_message": "Give them a listen and lets figure out who’s really trying to get ahold of Molina!"
+    "main": "How many likes does the biggest influencer have? You’ll need to solve the following equations to figure it out.",
+    "emojiGamePrompt": "Two icons next to one another with no operator between them signifies a two-digit number. It’s easiest to solve the equations in the order that they are presented below.",
+    "message": "“You need to get this information out to the general public! Of these athletes, who would be the best person to reach as many people as possible in the time we have left?”",
+    "emojiInputPrompt": "You may keep track of your work here"
   },
-  "calls": [
-    {
-      "number": "+403 (340) 392-1718",
-      "location": "Misala, La’Ann",
-      "date": "Yesterday",
-      "duration": "00:38",
-      "audio_file": "/audio/puzzle5/voicemail_1.mp3",
-      "transcription": "“Hi Molina, this is the Headmaster of the La’Ann Olympics. We are reaching out to you to notify you of your summons to the Olympic Advisory board meeting. Due to the urgency of the meeting, please call +403 (340) 392-1718 as soon as possible to confirm your intent to attend this meeting. Additionally, please prepare your government-issued ID and social security number to verify your identity over the phone. If we do not hear from you in 24 hours, you will be disqualified and banned. Thank you.”"
-    },
-    {
-      "number": "+403 (502) 101-5617",
-      "location": "Gorsha, La’Ann",
-      "date": "Yesterday",
-      "duration": "00:20",
-      "audio_file": "/audio/puzzle5/voicemail_2.mp3",
-      "transcription": "“Hi, this is Timothee Holland, the lead investigator for the International Olympic Committee. I believe we spoke yesterday. Please rest assured - I am not calling to prosecute you, but just to ask you some questions about some new evidence we found in the case regarding your coach’s fingerprints on Justine Kristoff’s equipment. Call me back when you can.”"
-    },
-    {
-      "number": "+403 (104) 270-1209",
-      "location": "Senaton, La’Ann",
-      "date": "Yesterday",
-      "duration": "00:21",
-      "audio_file": "/audio/puzzle5/voicemail_3.mp3",
-      "transcription": "“Hi, it’s Isaac Porza rooting for you back home in Senaton! You’ve come so far since our days training together. However, I’ve gotten word that the Olympic Advisory board has some future penalties in store… I didn’t hear what specifically, but that’s scary! Don’t remember where I heard it either… but I hope you’re holding up!”"
-    },
-    {
-      "number": "+403 (340) 143-1219",
-      "location": "Misala, La’Ann",
-      "date": "Yesterday",
-      "duration": "00:24",
-      "audio_file": "/audio/puzzle5/voicemail_4.mp3",
-      "transcription": "“Molina, sweetie, it’s your aunt. I know you must be super stressed with all the drama, but I wanted to call to tell you that you and the whole La’Ann Olympic Committee could be thrown in international prison for up to 30 years! I read it on Facebook, and I immediately panicked! I don’t want you to go to jail, but I thought I would at least tell you first. Take care sweetie, praying for you.”"
-    },
-    {
-      "number": "+403 (340) 253-9805",
-      "location": "Misala, La'Ann",
-      "date": "Yesterday",
-      "duration": "00:11",
-      "audio_file": "/audio/puzzle5/voicemail_5.mp3",
-      "transcription": "“Dear customer, this is a message from the Misala City Pharmacy notifying you that your prescription is ready for pick-up. Please review your email for a confirmation on the pick-up details. Thank you.”"
-    },
-    {
-      "number": "+403 (414) 607-9111",
-      "location": "Lacharta, La’Ann",
-      "date": "Yesterday",
-      "duration": "00:14",
-      "audio_file": "/audio/puzzle5/voicemail_6.mp3",
-      "transcription": "“Molina, I can’t believe you and the nation of La’Ann! I’ve heard from someone that the La’Ann athletes have had a history of sabotage in the Olympic Village since 2034. I also heard they have footage of you sneaking around the athletes’ quarters. You should be ashamed.”"
-    },
-    {
-      "number": "+403 (502) 477-4020",
-      "location": "Gorsha, La’Ann",
-      "date": "Yesterday",
-      "duration": "00:36",
-      "audio_file": "/audio/puzzle5/voicemail_7.mp3",
-      "transcription": "“Molina! This is Professor Iskabov from your alma mater. I got your number from one of your old professors. I needed to contact you because my lab has been doing research recently on the same chemical traces found in Justine’s bloodstream after the race. My lab and a few others had previously published some papers around the chemical and its usage - lemme tell you, it’s not easy to obtain. You need some sort of special governmental clearance to get the chemical, much higher clearance than you could possibly have. I’ll send you the links to some scholarly articles on the chemical for your review. Call me back if you have any questions! I believe in you.”"
-    }
-  ],
-  "background": "/images/puzzle5/bg.png",
-  "popup": "/images/puzzle5/popup_no_controls.png",
-  "info_icon": "/images/puzzle5/info.png"
+  "images": {
+    "emoji_math": { "src": "/images/puzzle5/emoji_math.png", "alt": "alt" },
+    "sub": [
+      { "src": "/images/puzzle5/1.png", "alt": "alt" },
+      { "src": "/images/puzzle5/2.png", "alt": "alt" },
+      { "src": "/images/puzzle5/3.png", "alt": "alt" },
+      { "src": "/images/puzzle5/4.png", "alt": "alt" },
+      { "src": "/images/puzzle5/5.png", "alt": "alt" }
+    ],
+    "inputBoxes": [
+      { "src": "/images/puzzle5/Asset 11.png", "alt": "open-mouth emoji" },
+      { "src": "/images/puzzle5/Asset 12.png", "alt": "hearts face emoji" },
+      { "src": "/images/puzzle5/Asset 13.png", "alt": "monocle emoji" },
+      { "src": "/images/puzzle5/Asset 14.png", "alt": "tear unhappy emoji" },
+      { "src": "/images/puzzle5/Asset 15.png", "alt": "open tounge closed eye emoji" },
+      { "src": "/images/puzzle5/Asset 16.png", "alt": "blue suprised emoji" },
+      { "src": "/images/puzzle5/Asset 17.png", "alt": "angry emoji" },
+      { "src": "/images/puzzle5/Asset 18.png", "alt": "thinking emoji" },
+      { "src": "/images/puzzle5/Asset 19.png", "alt": "laughing emoji" },
+      { "src": "/images/puzzle5/Asset 20.png", "alt": "smiling happy emoji" }
+    ]
+  },
+  "background": "/images/puzzle5/fb_bg.png",
+  "postBox": "/images/puzzle5/post_box.svg",
+  "postImg": "/images/puzzle5/post_img.svg",
+  "siteBg": "/images/puzzle5/site_bg.svg",
+  "panel": "/images/puzzle5/panel.svg"
 }
