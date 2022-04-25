@@ -21,7 +21,10 @@ const styles = () => ({
     messageAndNodeContainer: {
         backgroundColor: "white",
         maxWidth: "700px",
-        marginRight: "2em"
+        marginRight: "2em",
+        borderRadius: "20px",
+        position:"relative",
+        top:"-1.75em"
     },
     message: {
         color: "black",
@@ -51,12 +54,19 @@ const styles = () => ({
         flexDirection: "column",
         justifyContent: "center",
         alignItems: "center",
+        backgroundColor:"white",
+        borderRadius: "20px",
+        padding:"1em 1em 0em 1em",
+        marginBottom:"1.5em",
+        position:"relative",
+
     },
     passwordForm: {
         boxShadow: "4px 4px 4px rgba(0, 0, 0, 0.25)",
         backgroundColor: "#312700",
         width: "350px",
-        height: "213px"
+        height: "213px",
+        borderRadius: "20px"
     }
 });
 
