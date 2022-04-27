@@ -2,25 +2,21 @@
 const puzzle4 = require("../../../rooms/euphorigen/json/puzzle4.json");
 
 const styles = () => ({
-    backgroundContainer: {
-        backgroundColor: "#E5E5E5",
-        height: "140vh !important"
-    },
     backgroundImgContainer: {
+        height: "70em !important",
         padding: "0em 3em 4em 3em",
-        background: `url(${puzzle4.images.backgroundImg})`,
+        background: `url(${puzzle4.background})`,
         backgroundSize: "contain",
         backgroundPosition: "center top",
         backgroundRepeat: "no-repeat"
     },
     contentContainer: {
         color: "black",
-        backgroundColor: "#EBE1BC",
-        padding: "3em 1em 3em 1em"
+        padding: "3em 0em 3em 2em"
     },
     messageAndNodeContainer: {
         backgroundColor: "white",
-        maxWidth: "700px",
+        maxWidth: "750px",
         marginRight: "2em",
         borderRadius: "20px",
         position:"relative",
@@ -64,7 +60,7 @@ const styles = () => ({
     passwordForm: {
         boxShadow: "4px 4px 4px rgba(0, 0, 0, 0.25)",
         backgroundColor: "#312700",
-        width: "350px",
+        width: "100%",
         height: "213px",
         borderRadius: "20px"
     }

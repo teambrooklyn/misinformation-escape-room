@@ -11,7 +11,7 @@
       "Nate shared with Josh, who shared with Jules, who shared with Cindy"
     ]
   },
-  "message": "Oh no! The video you shared is a deep fake video! You shouldn’t have shared it! Now the misinformation is spreading like wildfire on social media. The researcher who contacted you wants you to trace theinformation pathways to try to stop this!",
+  "message": "Oh no! The video you shared is a deep fake video! You shouldn’t have shared it! Now the misinformation is spreading like wildfire on social media. The researcher who contacted you wants you to trace the information pathways to try to stop this!",
   "data": {
     "nodes": [
       { "id": "Krystal", "x":100, "y":0 },
@@ -88,5 +88,5 @@
     "main": [{ "src": "/images/puzzle4/main.png", "alt": "alt" }],
     "sub": [{ "src": "/images/puzzle4/1.png", "alt": "alt" }]
   },
-  "background": "/images/puzzle4/whiteboard_short.svg"
+  "background": "/images/puzzle4/bg.png"
 }

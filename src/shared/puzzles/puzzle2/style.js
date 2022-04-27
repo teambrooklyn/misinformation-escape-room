@@ -4,7 +4,7 @@ const puzzle2 = require("../../../rooms/euphorigen/json/puzzle2.json");
 
 const styles = () => ({
   backgroundContainer: {
-    height: "122vh !important",
+    height: "67em !important",
     background: `url(${puzzle2.images.backgroundImg})`,
     backgroundRepeat: "no-repeat",
     backgroundSize: "contain",
