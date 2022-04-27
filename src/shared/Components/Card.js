@@ -39,21 +39,21 @@ const Card = (props) => {
       handle=".handle"
       defaultPosition={{ x:props.x, y: props.y }}
       position={null}
-      grid={[15, 15]}
+      grid={[5, 5]}
       scale={1}
       onStop={handleStop}
     >
       <div className="card" style={{zIndex: "999", position: "relative"}}>
         <Grid className="handle">
           <div
-          style={{width: "300px", height: "200px", marginRight:"10px",marginLeft:"10px", marginBottom:"20px", textAlign:"left", alignItems:"center",zIndex:"999", cursor: "grab", backgroundImage: `url("${props.src}")`, backgroundPosition:"center", backgroundSize:"contain", backgroundRepeat: "no-repeat"}}>
-            <Grid container direction="row" justifyContent="center" style={{paddingTop:"10px", paddingBottom:"10px"}}>
+          style={{width: "100%", height: "50px", marginRight:"10px",marginLeft:"10px", padding: "10px", marginBottom:"20px", textAlign:"left", alignItems:"center", zIndex:"999", cursor: "grab", backgroundColor: "#FFFFFF", borderStyle: "solid", borderColor: "#e3e3e3", borderWidth: "1px", borderRadius: "20px", boxShadow: "4px 4px 4px rgba(0, 0, 0, 0.25)"}}>
+            <Grid container direction="row" justifyContent="flex-start" alignItems="flex-start">
               <Paper elevation={3}
-              style={{borderRadius:"50px", width:"33px", height:"33px",background:"rgb(117 117 117)"}} id={props.keyNumber+ "tac"}></Paper>
+                style={{width:"33px", height:"33px", background:"#131CA4", borderRadius:"50px"}} id={props.keyNumber+ "tac"}></Paper>
+              <Typography style={{width: "800px", fontFamily: "'Roboto', monospace", fontSize:"17px", paddingLeft:"25px", paddingRight:"25px"}}>
+                {props.text}
+              </Typography>
             </Grid>
-            <Typography style={{fontFamily:"'Courier Prime', monospace", fontSize:"17px", paddingLeft:"25px",paddingRight:"25px"}}>
-            {props.text}
-            </Typography>
           </div>
         </Grid>
       </div>

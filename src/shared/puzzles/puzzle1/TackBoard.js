@@ -7,30 +7,35 @@ import style from "./style"
 import Card from "@/shared/Components/Card.js";
 const useStyles = makeStyles(style)
 
-const TackBoard = ({text, keyNumber, statement, position}) => {
+const TackBoard = ({text, keyNumber, statement, position, bg, highlighted}) => {
 
     const classes = useStyles()
 
     return(
-        <Grid className={classes.tackBoardContainer}>
+        <Grid container direction="column" justifyContent="flex-start" alignItems="flex-start" className={classes.tackBoardContainer}>
             <Typography className={classes.notePrompt}>
-            {text}
+                {text}
             </Typography>
-            <Grid container direction="row" justifyContent="center" className={classes.bluePinContainer}>
+            
+            <Grid container direction="row" className={classes.bluePinContainer}>
                 <Paper elevation={3} className={classes.bluePin}></Paper>
+
+                { highlighted &&
+                    <div className={classes.textMarkContainer} >
+                        <Typography className={classes.textMark} >
+                            <span style={{opacity:"0"}}>{statement.text.substring(0, statement.letterIndex)/*.replaceAll(/[^\s]/g,"0")*/}</span>
+                            <mark style={{opacity:"40%", backgroundColor:"#131CA4"}}><span style={{opacity:"0", zIndex:"1001"}}>{statement.letter}</span></mark>
+                            <span style={{opacity:"0"}}>{statement.text.substring(statement.letterIndex + 1, statement.text.length)/*.replaceAll(/[^\s]/g,"0")*/}</span>
+                        </Typography>
+                    </div>
+                }
             </Grid>
 
-            <div className={classes.textMarkContainer} >
-                <Typography className={classes.textMark} >
-                    <span style={{opacity:"0"}}>{statement.text.substring(0, statement.letterIndex).replaceAll(/[^\s]/g,"0")}</span>
-                    <mark style={{opacity:"40%", backgroundColor:"#40B0A6"}}><span style={{opacity:"0", zIndex:"1001"}}>&nbsp;</span></mark>
-                    <span style={{opacity:"0"}}>{statement.text.substring(statement.letterIndex + 1, statement.text.length).replaceAll(/[^\s]/g,"0")}</span>
-                </Typography>
-            </div>
-
-            <Card x={position.x} y={position.y} src={statement.src} keyNumber={keyNumber} text={statement.text}/>
+            <Card x={position.x} y={position.y} src={bg} keyNumber={keyNumber} text={statement.text}/>
         </Grid>
     )
 }
+
+// 
 
 export default TackBoard;
