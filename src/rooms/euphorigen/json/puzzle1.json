@@ -13,23 +13,23 @@
       { "text":"From a Source Reporting Statistical Data"}
   ],
   "statements": [
-    {"text":"Toxicology reports from ski cross Olympian reveal abnormal patterns of liver behavior","letterIndex":15, "src":"/images/puzzle1/torn_paper_same_size/1_no_line.svg"},
-    {"text":"La’Ann 2050 Olympic Board to launch investigation, Bardhana and team suspected.","letterIndex":24, "src":"/images/puzzle1/torn_paper_same_size/2_no_line.svg"},
-    {"text":"Are athletes representing their country in the Olympics being well compensated? New research suggests that 58% did not consider themselves financially stable.","letterIndex":62, "src":"/images/puzzle1/torn_paper_same_size/3_no_line.svg"},
-    {"text":"Many items found near Olympic food hall,  leading to more concerns amongst athletes.","letterIndex":17, "src":"/images/puzzle1/torn_paper_same_size/4_no_line.svg"},
-    {"text":"Whistleblower claims that everybody on the La’Ann Olympic team is doping.","letterIndex":33, "src":"/images/puzzle1/torn_paper_same_size/5_no_line.svg"},
-    {"text":"After Bardhana scandal, should the La’Ann Olympic Committee be banned?","letterIndex":32, "src":"/images/puzzle1/torn_paper_same_size/6_no_line.svg"},
-    {"text":"“The Olympic staff members are poisoning the food in the Olympic Village”. The Olympic athlete shares their experience...","letterIndex":74, "src":"/images/puzzle1/torn_paper_same_size/7_no_line.svg"}
-  ]
-  ,
+    {"text":"After Bardhana scandal, should the La’Ann Olympic Committee be banned?", "letterIndex": 15, "letter": "s"},
+    {"text":"Toxicology reports from ski cross Olympian reveal abnormal patterns of liver behavior.", "letterIndex": 28, "letter": "c"},
+    {"text":"La’Ann 2050 Olympic Board to launch investigation, Bardhana and team suspected.", "letterIndex": 60, "letter": "a"},
+    {"text":"Many items found near Olympic food hall,  leading to more concerns amongst athletes.", "letterIndex": 17, "letter": "n"},
+    {"text":"Whistleblower claims that everybody on the La’Ann Olympic team is doping.", "letterIndex": 33, "letter": "d"},
+    {"text":"“The Olympic staff members are poisoning the food in the Olympic Village”. The Olympic athlete shares their experience.", "letterIndex": 87, "letter": "a"},
+    {"text":"Are athletes representing their country in the Olympics being well compensated? New research suggests that 58% did not consider themselves financially stable.", "letterIndex": 65, "letter": "l"}
+  ],
   "background": "/images/puzzle1/Puzzle1_bg.png",
+  "headlineBackground": "/images/puzzle1/headline_bg.png",
   "initialPosition": [
-    {"x": 150, "y": 105},
-    {"x": -210, "y": -150},
-    {"x": -225, "y": 0},
-    {"x": -30, "y": -285},
-    {"x": -225, "y": -539},
-    {"x": -375, "y": -570},
-    {"x": 180, "y": -660}
+    {"x": -1100, "y": 820},
+    {"x": -960, "y": 505},
+    {"x": -1040, "y": -80},
+    {"x": -1080, "y": 510},
+    {"x": -980, "y": -565},
+    {"x": -1000, "y": -225},
+    {"x": -1050, "y": -550}
   ]
 }

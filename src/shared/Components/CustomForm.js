@@ -14,7 +14,6 @@ const styles = (theme) => ({
   },
   button: {
     margin: theme.spacing(1),
-    backgroundColor: "#FFE790",
   },
   form: {
     width: "100%",

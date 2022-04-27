@@ -3,38 +3,39 @@ const puzzle1 = require("../../../rooms/euphorigen/json/puzzle1.json");
 
 const styles = () => ({
     background: {
-        padding: "6em 5em 10em 5em",
+        padding: "6em 5em 0em 5em",
         backgroundImage:`url("${puzzle1.background}")`,
         backgroundPosition:"center center",
         backgroundRepeat: "no-repeat",
     },
     alert: {
-        marginTop:"10px",
-        marginBottom:"20px",
+        position: "relative",
+        top: "105px",
         marginRight: "20px",
         backgroundColor: "#FFE790",
         boxShadow: "4px 4px 4px rgba(0, 0, 0, 0.25)"
     },
     passwordForm: {
+        position: "relative",
+        top: "105px",
         boxShadow: "4px 4px 4px rgba(0, 0, 0, 0.25)",
         backgroundColor: "#FFE790"
     },
+    lightsIcon: {
+        position: "relative",
+        top: "5px"
+      },
     tackBoardContainer: {
-        height:"285px",
+        height:"150px",
         // margin left and right are set to be a particular value to allow the blue and grey pin to overlap perfectly.
-        marginLeft:"33px",
-        marginRight:"36px"
+        marginLeft: "40px",
+        marginRight: "40px",
     },
     notePrompt: {
-        textAlign:"center",
-        width:"300px",
-        marginLeft:"auto",
-        marginRight:"auto",
-        fontFamily:"sans-serif",
-        fontSize:"18px",
-        marginBottom:"15px",
-        fontWeight:"500",
-        minHeight: "54px"
+        width: "900px",
+        fontFamily: "Roboto",
+        fontSize: "22px",
+        color: "#131CA4"
     },
     bluePinContainer: {
         width: "100%",
@@ -46,17 +47,16 @@ const styles = () => ({
         width:"33px",
         height:"33px",
         zIndex:"1000",
-        background: "#77a9f2"
+        background: "#131CA4",
+        opacity: "0.4"
     },
     textMarkContainer: {
-        width: "300px",
-        height: "200px",
+        height: "50px",
+        width: "800px",
         // margin bottom is set to be a particular value to allow the blue and grey pin to overlap perfectly.
-        marginBottom:"3px",
-        textAlign:"center",
-        alignItems:"center",
-        marginLeft:"auto",
-        marginRight:"auto"
+        marginBottom: "8px",
+        textAlign: "flex-start",
+        alignItems: "flex-start",
     },
     textMark: {
         fontSize:"17px",
@@ -64,7 +64,7 @@ const styles = () => ({
         position:"relative",
         cursor:"default",
         zIndex:"1002",
-        fontFamily:"'Courier Prime', monospace",
+        fontFamily:"'Roboto', monospace",
         pointerEvents:"none",
         paddingLeft:"25px",
         paddingRight:"25px"
