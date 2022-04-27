@@ -4,13 +4,13 @@ import { makeStyles } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
 import { Grid, TextField } from "@material-ui/core";
 
-import CustomForm from "@/shared/Components/CustomForm.js";
-import CustomLightbox from "@/shared/Components/CustomLightbox.js";
-import styles from "./style";
 import { handleTextBoxChange } from "@/shared/UtilityFunctions"
+import CustomForm from "@/shared/Components/CustomForm.js";
+import CustomImgLightbox from "@/shared/Components/CustomImgLightbox.js";
+import styles from "./style";
 import Lightbox from "react-image-lightbox";
 
-const binary_chart = "/images/puzzle2/03binary_chart.png";
+const binary_chart = "/images/puzzle2/binary_chart.png";
 // TODO: change to props
 const puzzle2 = require("../../../rooms/euphorigen/json/puzzle2.json");
 
@@ -27,73 +27,81 @@ const Puzzle2 = (props) => {
   const data = ['Twitter', 'Reddit', 'Instagram', 'Facebook']
   return (
     <Grid container justifyContent="center" alignItems="center" className={classes.backgroundContainer}>
-      <Grid className={classes.backgroundImgContainer}>
-      {/* <img className="navbar" src={"/images/puzzle2/navbar.png"} width="1350px" height="65px" alt="nav bar"></img> */}
-        <Grid container direction="column" justifyContent="center" alignItems="center" wrap="nowrap" style={{width: "1200px", padding: "0 3em 0 3em"}}>
-          <Grid container direction="row" justifyContent="space-evenly" alignItems="center" wrap="nowrap" className={classes.timeAndMessageContainer}>
-            <div className={classes.timeContainer}>
-              <p style={{font: "Helvetica Neue", fontWeight: "400", fontSize: "40px"}}>{puzzle2.puzzleText.time}</p>
-              <p style={{marginTop: "-30px"}}>{puzzle2.puzzleText.date}</p>
-            </div>
-            <div className={classes.messageContainer}>
-              <img className={classes.logo} src={"/images/message/imessagelogo.png"} alt="imessagelogo"></img>
-              <div className={classes.messageText}>Coach</div>
-              <div className={classes.fromText} >{}</div>
-              <div className={classes.bodyText} >{puzzleText.message}</div>
-            </div>
+      <Grid container direction="column" justifyContent="center" alignItems="center" wrap="nowrap" style={{width: "1500px"}}>
+        <Grid container direction="row" justifyContent="center" alignItems="center" wrap="nowrap">
+          <Grid container justifyContent="center" alignItems="center" direction="column" wrap="nowrap" className={classes.promptContainer}>
+
+            <Typography component="div" variant="body1" className={classes.textContainer} style={{padding: "30px", fontSize: "20px"}}>
+              <div style={{textAlign: "left"}}>{puzzleText.title} </div>
+              <div style={{marginTop: "35px"}}>
+                {puzzleText.bullets.map((bullet, key) => {
+                  return (
+                    <li key={key}>{bullet}</li>
+                  )
+                })}
+              </div>
+              <div style={{textAlign: "left", marginTop: "35px"}}>{puzzleText.main[0]} </div>
+            </Typography>
+
+            <Grid>
+              <Grid container direction="row" alignItems="center">
+                {images.sub.map(({ src }, key) => (
+                  <div key={key} style={{marginLeft: "60px", marginRight: "60px", marginTop: "30px"}}>
+                    <Grid container direction="row" alignItems="center">
+                      <div>
+                        <CustomImgLightbox img={"/images/puzzle2/folder.png"} alt={data[key] + "folder"} width="135px" height="110px" src={public_url + src} padding={50}/>
+                        <Typography
+                          component="p"
+                          variant="body1"
+                          style ={{color:"#009F3D", fontSize: "25px", fontWeight: "bold", textAlign: "center"}}>
+                            {data[key]}
+                        </Typography>
+                      </div>
+                      <TextField
+                        variant="outlined"
+                        label="Enter letter"
+                        size="medium"
+                        className={classes.textField}
+                        onBlur={event => {
+                          handleTextBoxChange(event, key)
+                        }}
+                      />
+                    </Grid>
+                  </div>
+                ))}
+              </Grid>
+            </Grid>
           </Grid>
 
-          <Grid container direction="row" justifyContent="center" alignItems="center" wrap="nowrap">
-            <Grid container justifyContent="center" alignItems="center" direction="column" className={classes.passwordFormContainer}>
-              <Grid container justifyContent="center" alignItems="center" direction="column" className={classes.textContainer} style={{width: "250px", height: "300px"}}>
-                <CustomForm id={3} password={password}/>
-              </Grid>
-
-              <button className={classes.formButton} onClick={() => setIsOpen(true)}>
-                Tap to see code
-              </button>
-
-              {isOpen && (
-                <Lightbox
-                  mainSrc={public_url + binary_chart}
-                  onCloseRequest={() => setIsOpen(false)}
-                />
-              )}
-            </Grid>
-
-            <Grid container justifyContent="center" alignItems="center" direction="column" wrap="nowrap" className={classes.promptContainer}>
-
-              <Typography component="div" variant="body1" className={classes.textContainer}>
-                <div style={{textAlign: "center"}}>{puzzleText.title} </div>
-                <div style={{marginTop: "20px"}}>
-                  {puzzleText.bullets.map((bullet, key) => {
-                    return (
-                      <li key={key}>{bullet}</li>
-                    )
-                  })}
+          <Grid container justifyContent="center" alignItems="center" direction="column" className={classes.passwordFormContainer}>
+            <div className={classes.messageContainer}>
+              <Grid container direction="row">
+                <div style={{width: "50px"}}>
+                  <img className={classes.pfp} src={"/images/puzzle2/coach_pfp.png"} alt="coach profile pic"/>
                 </div>
-                <div style={{textAlign: "center", marginTop: "20px"}}>{puzzleText.main[0]} </div>
-
-              </Typography>
-
-
-              <Grid>
-                <Grid container spacing={2} display="" direction="row" justifyContent="center" alignItems="center" style={{marginTop:"-25px"}}>
-                  {images.sub.map(({ src }, key) => (
-                    <div key={key} style={{marginLeft:"10px",marginRight:"10px"}}>
-                      <div style={{marginLeft:"20px"}}>
-                        <Typography
-                          component="div"
-                          variant="body1"
-                          style ={{paddingLeft:"2px", color:"#009F3D", fontWeight:"bold"}}>{data[key]}
-                        </Typography>
-                        <img className="folder" src={"/images/puzzle2/folder.png"} width="75px" height="70px" alt="folder image"></img>
-                      </div>
-                      <CustomLightbox part={key} src={public_url + src} />
-                    </div>
-                  ))}
-                </Grid>
+                <div style={{width: "450px", marginTop: "10px"}}>
+                  <img className={classes.logo} src={"/images/message/imessagelogo.png"} alt="iMessage logo"/>
+                  <div className={classes.messageText}>Coach</div>
+                  <div className={classes.bodyText} >{puzzleText.message}</div>
+                </div>
               </Grid>
+            </div>
+
+            <div style={{height: "165px"}}/>
+            
+            <button className={classes.formButton} onClick={() => setIsOpen(true)}>
+              Tap to see code
+            </button>
+
+            {isOpen && (
+              <Lightbox
+                mainSrc={public_url + binary_chart}
+                onCloseRequest={() => setIsOpen(false)}
+              />
+            )}
+
+            <Grid container justifyContent="center" alignItems="center" direction="column" className={classes.textContainer} style={{width: "500px", height: "300px"}}>
+              <CustomForm id={3} password={password}/>
             </Grid>
           </Grid>
         </Grid>
