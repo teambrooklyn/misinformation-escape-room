@@ -38,9 +38,9 @@ const UploadPage = (props) => {
     if (location.pathname.includes("newvideo")) {
       path = `/ending_`
     } else if (level >= 6) {
-      path = `/ending`
-    } else if (level === 5) {
       path = `/shared`
+    } else if (level === 5) {
+      path = `/puzzles`
     }
 
     timer.current = setTimeout(() => {

@@ -88,7 +88,7 @@ const Puzzle4 = () => {
           </Typography>
 
           <Grid container direction="column" justifyContent="center" alignItems="center" className={classes.passwordForm}>
-            <CustomForm id={5} password={password}/>
+            <CustomForm id={4} password={password}/>
           </Grid>
 
         </Grid>

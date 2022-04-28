@@ -75,6 +75,15 @@ const CustomForm = (props) => {
         alert("Password is correct. Congrats!");
 
         switch (newLevel) {
+          // case 4:
+          //   history.replace(`/upload/pre-1`);
+          //   break;
+          // case 5:
+          //  history.replace(`/upload/1`);
+          //  break;
+          case 6:
+            history.replace(`/upload/2`);
+            break;
           default:
             history.replace('/puzzles');
             break;
@@ -93,7 +102,6 @@ const CustomForm = (props) => {
 
   const classes = useStyles();
   let content;
-
 
     if (props.id === 2) {
       content =
@@ -126,7 +134,6 @@ const CustomForm = (props) => {
                 size="medium"
                 fullWidth
                 color="primary"
-                background="#DF0024"
                 className={classes.margin}
               >
                 Confirm
@@ -166,7 +173,6 @@ const CustomForm = (props) => {
               size="medium"
               fullWidth
               color="primary"
-              background="#DF0024"
               className={classes.margin}
             >
               Confirm
@@ -206,7 +212,6 @@ const CustomForm = (props) => {
               size="medium"
               fullWidth
               color="primary"
-              background="#DF0024"
               className={classes.margin}
             >
               Confirm

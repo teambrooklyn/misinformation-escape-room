@@ -7,8 +7,6 @@ import styles from "@/shared/Assets/style/uploadStyle.js"
 
 import Alert from '@material-ui/lab/Alert';
 
-import fake from "@/rooms/euphorigen/assets/videos/fake.webm";
-
 import ReplyOutlinedIcon from '@material-ui/icons/ReplyOutlined';
 
 import IconButton from '@material-ui/core/IconButton';
@@ -18,7 +16,7 @@ import { getWithExpiry } from "@/shared/UtilityFunctions";
 const useStyles = makeStyles(styles);
 const meta = require("@/rooms/euphorigen/json/metadata.json");
 
-const PreUploadPage = ({props}) => {
+const PreUploadPage = (props) => {
   const location = useLocation();
   const isInPerson = location.pathname.includes("doctorvideo");
   const classes = useStyles();
@@ -26,12 +24,13 @@ const PreUploadPage = ({props}) => {
   const timer = useRef();
   let history = useHistory();
 
-  const [nextDisabled, setnextDisabled] = useState(true)
+  const [nextDisabled, setNextDisabled] = useState(true)
 
-  const timerLength = level >= 6 ? 0 : 30000
+  // CHANGE THIS TIMER LENGTH AFTER DEBUGGING
+  const timerLength = level >= 6 ? 0 : 0 // 30000
 
   timer.current = setTimeout(() => {
-    setnextDisabled(false)
+    setNextDisabled(false)
   }, timerLength)
 
   const handleNext = () => {
@@ -39,7 +38,6 @@ const PreUploadPage = ({props}) => {
     timer.current = setTimeout(() => {
         history.replace(path);
     }, 0);
-
   };
 
   const buttons = isInPerson ?
@@ -90,9 +88,6 @@ const PreUploadPage = ({props}) => {
               justifyContent="center"
               wrap="nowrap"
               alignItems="center">
-              <Grid style={{width: "800px"}}>
-                <Alert color="info" className={classes.alert}>{meta.script[5]}</Alert>
-              </Grid>
                 <Grid
                   container
                   direction="row"
@@ -106,7 +101,7 @@ const PreUploadPage = ({props}) => {
                   justifyContent="center"
                   alignItems="center">
                     <video width="70%" height="70%" controls>
-                      <source src={fake} type="video/webm" />
+                      <source src={props.videoSrc} type="video/webm" />
                     </video>
                   </Grid>
 

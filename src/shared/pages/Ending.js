@@ -14,6 +14,7 @@ const Ending = (props) => {
   localStorage.removeItem('password');
   localStorage.removeItem('level');
   localStorage.removeItem("preUploadVideoWatched");
+  localStorage.removeItem("preCorrectVideoWatched");
 
   for(let i = 0; i<5; i++) {
     localStorage.removeItem(`p${i}start`);
@@ -54,8 +55,8 @@ const Ending = (props) => {
 
             <Grid container justifyContent="center" alignItems="center">
               <img
-                src={`${PUBLIC_URL}/images/euphorigen_banner.jpg`}
-                alt="Euphorigen Logo"
+                src={`${PUBLIC_URL}/images/laannbanner.png`}
+                alt="La'Ann 2050 Logo"
                 style={{ height: "130px", width: "auto" }}
               />
             </Grid>

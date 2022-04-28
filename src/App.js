@@ -11,6 +11,7 @@ const App = () => {
   const routes = [
     { path: `${path}puzzles`, comp: "./shared/pages/hub" },
     { path: `${path}upload/pre-1`, comp: "./shared/Hubs/computerHub/UploadContent", name: 'PreUploadFake' },
+    { path: `${path}upload/pre-2`, comp: "./shared/Hubs/computerHub/UploadContent", name: 'PreCorrect' },
     { path: `${path}upload/1`, comp: "./shared/Hubs/computerHub/UploadContent", name: "UploadFake"},
     { path: `${path}shared`, comp: "./shared/pages/Shared" },
     { path: `${path}upload/2`, comp: "./shared/Hubs/computerHub/UploadContent", name: "UploadReal" },

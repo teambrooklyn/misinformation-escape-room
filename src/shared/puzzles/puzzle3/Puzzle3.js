@@ -88,7 +88,7 @@ const Puzzle3 = () => {
             )}
 
             <Grid className={classes.passwordForm} style={{width: "250px"}}>
-              <CustomForm id={4} password={password} />
+              <CustomForm id={3} password={password} />
             </Grid>
           </Grid>
 

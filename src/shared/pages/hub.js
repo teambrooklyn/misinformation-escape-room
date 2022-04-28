@@ -28,8 +28,10 @@ const Hub = () => {
 
   const level = parseInt(getWithExpiry("level"))
   const preUploadVideoWatched = getWithExpiry("preUploadVideoWatched");
+  const preCorrectVideoWatched = getWithExpiry("preCorrectVideoWatched");
   const history = useHistory()
   const [openMessageDialog, setOpenMessageDialog] = useState(false);
+  const [openDeepFakeMessageDialog, setOpenDeepFakeMessageDialog] = useState(false);
   const [dialogClicked, setDialogClicked] = useState(false);
   const [openMsgBubble, setOpenMsgBubble] = useState(true);
   const currentDevice = getMessageDeviceBg(level)
@@ -40,26 +42,31 @@ const Hub = () => {
   let keys = [...mapping.keys()];
 
   useEffect(() => {
-    /*
-    TO BE IMPLEMENTED WHEN ADDING THE VIDEO
-    
-    if (level === 5 && window.location.pathname.split("/")[3] === undefined) {
-      setOpenMsgBubble(false)
-    } else if (preUploadVideoWatched) {
-      setDialogClicked(true)
+    if (level === 6 && window.location.pathname.split("/")[3] === undefined) {
+      setOpenDeepFakeMessageDialog(true)
       setOpenMsgBubble(false)
     } else {
       setOpenMsgBubble(true)
       setDialogClicked(false)
     }
-    */
-    setOpenMsgBubble(true)
-    setDialogClicked(false)
   },[level, preUploadVideoWatched])
 
+  const handleCloseDeepFakeMessageDialog = () => {
+    setOpenDeepFakeMessageDialog(false);
+    setOpenMessageDialog(true);
+  };
+
   const handleCloseMessageDialog = () => {
-    setOpenMessageDialog(false)
-    setDialogClicked(true)
+    if (level === 4 && !preUploadVideoWatched) {
+      setWithExpiry("preUploadVideoWatched", true, 1000000)
+      history.replace(`/upload/pre-1`)
+    } else if (level === 5 && !preCorrectVideoWatched) {
+      setWithExpiry("preCorrectVideoWatched", true, 1000000)
+      history.replace(`/upload/pre-2`)
+    } else {
+      setOpenMessageDialog(false)
+      setDialogClicked(true)
+    }
   };
 
   const password = getWithExpiry("password")
@@ -142,11 +149,35 @@ const Hub = () => {
 
               {navItems}
 
+              <Dialog
+                open={openDeepFakeMessageDialog}
+                PaperProps={{
+                  style: {
+                    backgroundColor: 'transparent',
+                    boxShadow: 'none',
+                  },
+                }}
+              >
+                <Grid
+                  container
+                  direction="column"
+                  justifyContent="center"
+                  alignItems="center"
+                  wrap="nowrap"
+                  className={classes.message}>
+                  <strong>MESSAGES</strong>
+
+                  <p>You have a new message!</p>
+
+                  <p className={classes.openButton} onClick={handleCloseDeepFakeMessageDialog}>Open</p>
+                </Grid>
+              </Dialog>
+
               <MessageDialog
-                textContent={meta.script[level - 1]}
+                textContent={meta.script[level - 1][((level == 4 && preUploadVideoWatched) || (level == 5 && preCorrectVideoWatched)) ? 1 : 0]}
                 openDialog={openMessageDialog}
                 setOpenDialog={handleCloseMessageDialog}
-                currentLevel={level}
+                isSecondDialog={((level == 4 && preUploadVideoWatched) || (level == 5 && preCorrectVideoWatched))}
               />
 
             </Grid>

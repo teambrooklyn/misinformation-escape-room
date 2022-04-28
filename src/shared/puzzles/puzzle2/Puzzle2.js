@@ -101,7 +101,7 @@ const Puzzle2 = (props) => {
             )}
 
             <Grid container justifyContent="center" alignItems="center" direction="column" className={classes.textContainer} style={{width: "500px", height: "300px"}}>
-              <CustomForm id={3} password={password}/>
+              <CustomForm id={2} password={password}/>
             </Grid>
           </Grid>
         </Grid>

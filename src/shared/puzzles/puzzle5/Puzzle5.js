@@ -65,7 +65,7 @@ const Puzzle5 = () => {
                 style={{width: "300px"}}>
 
             <Grid className={classes.contentBg} style={{width: "250px"}}>
-              <CustomForm id={4} password={password} />
+              <CustomForm id={5} password={password} />
             </Grid>
 
             <Grid container justifyContent="center" alignItems="center" className={classes.contentBg} style={{width: "280px",height: "530px", marginTop: "20px"}}>

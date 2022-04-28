@@ -11,7 +11,7 @@ import { getWithExpiry } from "@/shared/UtilityFunctions";
 
 const useStyles = makeStyles(style)
 
-const MessageDialog = ({textContent, openDialog, setOpenDialog, currentLevel}) => {
+const MessageDialog = ({textContent, openDialog, setOpenDialog, isSecondDialog}) => {
 
     const location = useLocation()
 
@@ -32,7 +32,7 @@ const MessageDialog = ({textContent, openDialog, setOpenDialog, currentLevel}) =
 
     let content;
 
-    /*if (level === 5 && !location.pathname.includes("upload")) {
+    if (level === 6 && !location.pathname.includes("upload")) {
       content =
       <Grid container direction="column" alignItems="center" justifyContent="flex-start">
         <ImageMapper src={public_url + dialog} map={MAP} height={.6*sH} active={false}/>
@@ -41,20 +41,12 @@ const MessageDialog = ({textContent, openDialog, setOpenDialog, currentLevel}) =
     } else {
       content = (
       <Grid container direction="column" alignItems="center" justifyContent="flex-start">
-        <Grid className={classes.backgroundContainer} style={{ backgroundImage: `url(/images/dialog_devices/iphone${level}.png)` }}>
+        <Grid className={classes.backgroundContainer} style={{ backgroundImage: `url(/images/message/dialog_devices/iphone${level}${isSecondDialog ? ".5" : ""}.png)` }}>
           <p className={classes.textbox}>{textContent}</p>
         </Grid>
       </Grid>
       )
-    }*/
-
-    content = (
-    <Grid container direction="column" alignItems="center" justifyContent="flex-start">
-      <Grid className={classes.backgroundContainer} style={{ backgroundImage: `url(/images/dialog_devices/iphone${level}.png)` }}>
-        <p className={classes.textbox}>{textContent}</p>
-      </Grid>
-    </Grid>
-    )
+    }
 
     return (
       <Dialog

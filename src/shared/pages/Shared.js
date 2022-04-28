@@ -16,7 +16,7 @@ const Shared = () => {
   const sharedGif = isInPerson ?  "/images/shared/shared_mobile.gif" : "/images/shared/shared.gif";
 
   useEffect(() => {
-    let path = isInPerson ? '/viralvideo' : '/puzzles'
+    let path = isInPerson ? '/viralvideo' : '/ending'
 
     setTimeout(() => {
       history.replace(path);

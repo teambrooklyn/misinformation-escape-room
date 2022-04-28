@@ -2,6 +2,7 @@ import React from "react";
 
 import { makeStyles } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
+import fake from "@/rooms/euphorigen/assets/videos/fake.webm";
 import real from "@/rooms/euphorigen/assets/videos/real.webm";
 import fakeVideoPreview from "@/rooms/euphorigen/assets/videos/fake-preview.png"
 import Upload from "@/shared/pages/Upload.js";
@@ -9,16 +10,21 @@ import PreUpload from "@/shared/pages/PreUpload.js";
 import styles from "@/shared/Assets/style/uploadStyle.js";
 const useStyles = makeStyles(styles);
 
-const solutionImage = `${process.env.PUBLIC_URL}/images/puzzle4/3.jpg`;
+const solutionImage = `${process.env.PUBLIC_URL}/images/puzzle5/3.jpg`;
 
-export const PreUploadFake = (props) => {
-
+export const PreUploadFake = () => {
   return (
-    <PreUpload/>
+    <PreUpload videoSrc={fake}/>
   );
 };
 
-export const UploadFake = () => {
+export const PreCorrect = () => {
+  return (
+    <PreUpload videoSrc={real}/>
+  );
+};
+
+export const UploadReal = () => {
   const classes = useStyles();
 
   return (
@@ -52,8 +58,7 @@ export const UploadFake = () => {
   );
 };
 
-export const UploadReal = () => {
-
+export const UploadFake = () => {
   return (
     <Upload>
       <Grid
