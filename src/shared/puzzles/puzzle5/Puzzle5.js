@@ -22,41 +22,36 @@ const Puzzle5 = () => {
   return (
     <Grid container alignItems="center" justifyContent="center" wrap="nowrap" className={classes.background}>
       <Grid className={classes.backgroundImg}>
-
         <Grid container justifyContent="center" alignItems="center" wrap="nowrap" className={classes.content}>
-
-          <Grid item container justifyContent="center" alignItems="center" className={classes.messageNote}>
-            <span style={{padding: "1em"}}>
-              {puzzle5.puzzleText.message}
-            </span>
+          <Grid className="messageNote">
+             <img src={"/images/puzzle5/coach.png"} style={{height: "8em", position:"relative", left:"970px", top:"-148px", borderRadius:"15px"}}/>
           </Grid>
 
           <Grid container direction="column" justifyContent="center" alignItems="center" wrap="nowrap" className={classes.window}>
-              <Grid className={classes.galleryContainer}>
-                <Gallery images={images.sub.map(({ src }) => public_url + src)} />
+              <Grid className={classes.galleryContainer} style={{padding: "1em"}}>
+                <img src={"/images/puzzle5/people.png"} style={{height: "43em"}}/>
               </Grid>
 
-
-              <Grid container direction="column" justifyContent="center" alignItems="center" className={classes.postOne}>
+              <div className="instructionContainer">
+                <Grid className={classes.postOne} style={{padding: "1em"}}>
+                  <img src={"/images/puzzle5/whitebox.jpeg"} style={{height: "180px", width:"800px", borderRadius:"25px"}}/>
+                </Grid>
                 <Typography component="p" variant="body1" className={classes.postOneTextBox}>
                   {puzzleText.main}
                 </Typography>
-              </Grid>
-
-              <div className={classes.postTwo}>
-                <Grid style={{position: "relative"}}>
-                  <Typography component="p" variant="body1" className={classes.postTwoTextBox}>
-                    {puzzleText.emojiGamePrompt}
-                  </Typography>
-                </Grid>
-                <Grid className={classes.imageContainer}>
+                <Typography component="p" variant="body1" className={classes.postTwoTextBox}>
+                  {puzzleText.emojiGamePrompt}
+                </Typography>
+              </div>
+      
+              <Grid className={classes.imageContainer} >
                   <img
                     src={public_url + images.emoji_math.src}
                     alt={images.emoji_math.src}
                     className={classes.scaleimg}
+                    style={{height:"450px", width:"350px"}}
                   />
                 </Grid>
-              </div>
 
           </Grid>
 
@@ -64,15 +59,15 @@ const Puzzle5 = () => {
                 direction="column" alignItems="center" justifyContent="center"
                 style={{width: "300px"}}>
 
-            <Grid className={classes.contentBg} style={{width: "250px"}}>
+            <Grid className={classes.contentBg} style={{width: "395px", position:"relative", left:"-145px", top:"385px"}}>
               <CustomForm id={5} password={password} textFieldColor="#FFFFFF" buttonColor="#DF0024"/>
             </Grid>
 
-            <Grid container justifyContent="center" alignItems="center" className={classes.contentBg} style={{width: "280px",height: "530px", marginTop: "20px"}}>
+            <Grid container justifyContent="center" alignItems="center" className={classes.contentBg} style={{width: "420px",height: "570px", position:"relative", top:"450px", left:"-145px"}}>
               <Typography
                 component="div"
                 variant="body1"
-                style ={{marginTop:"3px", textAlign:"center"}}>{puzzle5.puzzleText.emojiInputPrompt}
+                style ={{marginBottom:"20px", textAlign:"center"}}>{puzzle5.puzzleText.emojiInputPrompt}
               </Typography>
 
               {images.inputBoxes.map(({ src, alt }, key) => (
@@ -110,7 +105,6 @@ const Puzzle5 = () => {
             </Grid>
           </Grid>
         </Grid>
-
       </Grid>
     </Grid>
   );

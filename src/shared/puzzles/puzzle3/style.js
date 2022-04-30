@@ -3,8 +3,8 @@ const puzzle3 = require("../../../rooms/euphorigen/json/puzzle3.json");
 
 const styles = () => ({
   background: {
-    backgroundColor: "#E5E5E5"
-    // height: "100vh !important"
+    backgroundColor: "#E5E5E5",
+    height: "100vh !important"
   },
   backgroundImg: {
     padding: "4em 4em 8em 4em",
@@ -70,7 +70,7 @@ const styles = () => ({
     position: "relative",
     top: "-180px",
     left:"37px",
-    paddingTop:"3.3rem"
+    paddingTop:"5.5rem"
   },
   voicemailContainer: {
     height: "3.25em",

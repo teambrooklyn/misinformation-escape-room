@@ -32,9 +32,9 @@ const Puzzle3 = () => {
         <Grid container justifyContent="center" alignItems="center" wrap="nowrap" className={classes.content}>
           <Grid container direction="column" justifyContent="center" alignItems="center" wrap="nowrap" className={classes.window}>
             <Grid container direction="column" justifyContent="flex-start" alignItems="flex-start" wrap="nowrap" className={classes.instructions}>
-              <button type="button" className="close" data-dismiss="alert" aria-label="Close">
+              {/* <button type="button" className="close" data-dismiss="alert" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
-              </button>
+              </button> */}
               <Typography component="div" variant="body1" className={classes.textContainer}>
                 <div>{puzzleText.main[0]} </div>
                 <div style={{marginTop: "1em"}}>
