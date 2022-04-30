@@ -10,7 +10,7 @@ import PreUpload from "@/shared/pages/PreUpload.js";
 import styles from "@/shared/Assets/style/uploadStyle.js";
 const useStyles = makeStyles(styles);
 
-const solutionImage = `${process.env.PUBLIC_URL}/images/puzzle5/3.jpg`;
+const solutionImage = `${process.env.PUBLIC_URL}/images/puzzle5/3.png`;
 
 export const PreUploadFake = () => {
   return (

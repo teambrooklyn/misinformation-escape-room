@@ -12,14 +12,14 @@ const styles = () => ({
         position: "relative",
         top: "105px",
         marginRight: "20px",
-        backgroundColor: "#FFE790",
+        backgroundColor: "#fef9e5",
         boxShadow: "4px 4px 4px rgba(0, 0, 0, 0.25)"
     },
     passwordForm: {
         position: "relative",
         top: "105px",
         boxShadow: "4px 4px 4px rgba(0, 0, 0, 0.25)",
-        backgroundColor: "#FFE790"
+        backgroundColor: "#fef9e5"
     },
     lightsIcon: {
         position: "relative",

@@ -37,6 +37,20 @@ const styles = (theme) => ({
         fontWeight: "500",
         fontSize: "20px",
         lineHeight: "24px",
+    },
+    closeDialogButton: {
+        width: "20px",
+        height: "20px",
+        textAlign: "center",
+        position: "relative",
+        top: "-24.9em",
+        right: "14.1em",
+        color: "#FFFFFF",
+        background: "#377AF6",
+        borderStyle: "hidden",
+        borderRadius: "10px",
+        fontSize: "10px",
+        cursor: "pointer"
     }
 });
 

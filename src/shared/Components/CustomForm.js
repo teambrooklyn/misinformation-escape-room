@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
 
 import { TextField } from "@material-ui/core";
-import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles, createTheme, ThemeProvider } from "@material-ui/core/styles";
 import { Button, Grid } from "@material-ui/core";
 import Container from "@material-ui/core/Container";
 
@@ -103,6 +103,29 @@ const CustomForm = (props) => {
   const classes = useStyles();
   let content;
 
+  const theme = createTheme({
+    palette: {
+      primary: {
+        main: props.buttonColor
+      }
+    },
+    overrides: {
+      MuiInput: {
+        underline: {
+          "&:before": {
+            borderBottom: `1px solid ${props.textFieldColor}`
+          },
+          "&:hover:not($disabled):not($focused):not($error):before": {
+            borderBottom: `2px solid ${props.textFieldColor}`
+          },
+          "&:after": {
+            borderBottom: `2px solid ${props.textFieldColor}`
+          },
+        }
+      }
+    }
+  });
+  
     if (props.id === 2) {
       content =
         <form
@@ -119,25 +142,28 @@ const CustomForm = (props) => {
             alignItems="center"
           >
             <Container maxWidth="xs">
-              <TextField
-                id="standard-basic"
-                label="Enter Password"
-                fullWidth
-                InputProps={{ className: classes.input }}
-                InputLabelProps={{ className: classes.label }}
-                required
-                className={classes.margin}
-              />
-              <Button
-                type="submit"
-                variant="contained"
-                size="medium"
-                fullWidth
-                color="primary"
-                className={classes.margin}
-              >
-                Confirm
-              </Button>
+              <ThemeProvider theme={theme}>
+                <TextField
+                  id="standard-basic"
+                  label="Enter Password"
+                  fullWidth
+                  InputProps={{ className: classes.input, style : {color : props.textFieldColor} }}
+                  InputLabelProps={{ className: classes.label, style : {color : props.textFieldColor} }}
+                  required
+                  className={classes.margin}
+                />
+              
+                <Button
+                  type="submit"
+                  variant="contained"
+                  size="medium"
+                  fullWidth
+                  color="primary"
+                  className={classes.margin}
+                >
+                  Confirm
+                </Button>
+              </ThemeProvider>
             </Container>
           </Grid>
         </div>
@@ -158,25 +184,27 @@ const CustomForm = (props) => {
           alignItems="center"
         >
           <Container maxWidth="xs">
-            <TextField
-              id="standard-basic"
-              label="Enter Password"
-              fullWidth
-              InputProps={{ className: classes.puzzle5Input }}
-              InputLabelProps={{ className: classes.puzzle5Input }}
-              required
-              className={classes.margin}
-            />
-            <Button
-              type="submit"
-              variant="contained"
-              size="medium"
-              fullWidth
-              color="primary"
-              className={classes.margin}
-            >
-              Confirm
-            </Button>
+            <ThemeProvider theme={theme}>
+              <TextField
+                id="standard-basic"
+                label="Enter Password"
+                fullWidth
+                InputProps={{ className: classes.puzzle5Input, style : {color : props.textFieldColor} }}
+                InputLabelProps={{ className: classes.puzzle5Input, style : {color : props.textFieldColor} }}
+                required
+                className={classes.margin}
+              />
+                <Button
+                  type="submit"
+                  variant="contained"
+                  size="medium"
+                  fullWidth
+                  color="primary"
+                  className={classes.margin}
+                >
+                  Confirm
+                </Button>
+              </ThemeProvider>
           </Container>
         </Grid>
       </div>
@@ -197,25 +225,27 @@ const CustomForm = (props) => {
           alignItems="center"
         >
           <Container maxWidth="xs">
-            <TextField
-              id="standard-basic"
-              label="Enter Password"
-              fullWidth
-              InputProps={{ className: classes.input }}
-              InputLabelProps={{ className: classes.input }}
-              required
-              className={classes.margin}
-            />
-            <Button
-              type="submit"
-              variant="contained"
-              size="medium"
-              fullWidth
-              color="primary"
-              className={classes.margin}
-            >
-              Confirm
-            </Button>
+            <ThemeProvider theme={theme}>
+              <TextField
+                id="standard-basic"
+                label="Enter Password"
+                fullWidth
+                InputProps={{ className: classes.input, style : {color : props.textFieldColor} }}
+                InputLabelProps={{ className: classes.input, style : {color : props.textFieldColor} }}
+                required
+                className={classes.margin}
+              />
+                <Button
+                  type="submit"
+                  variant="contained"
+                  size="medium"
+                  fullWidth
+                  color="primary"
+                  className={classes.margin}
+                >
+                  Confirm
+                </Button>
+              </ThemeProvider>
           </Container>
         </Grid>
       </div>

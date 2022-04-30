@@ -1,23 +1,15 @@
 import { green } from "@material-ui/core/colors";
 
-const public_url = process.env.PUBLIC_URL;
+const public_url = ""; //process.env.PUBLIC_URL;
 
 const styles = (theme) => ({
   deviceContainer: {
-      backgroundImage: `url(${public_url}/images/room/room.png)`,
+      backgroundImage: `url(${public_url}/images/message/dialog_devices/facebook.png)`,
       backgroundPosition: "center center",
+      backgroundSize: "contain",
       backgroundRepeat: "no-repeat",
-      width: "100vw",
-      height: "100vh",
-      padding: "2vw"
-  },
-  deviceBackground: {
-    backgroundImage: `url(${public_url}/images/dialog_devices/pc.svg)`,
-    backgroundPosition: "center center",
-    backgroundRepeat: "no-repeat",
-    backgroundSize: "1000px 800px",
-    height: "700px",
-    padding: "px 120px 80px 120px"
+      width: "100%",
+      height: "100vh"
   },
   wrapper: {
     minWidth: "100%",
@@ -61,18 +53,18 @@ const styles = (theme) => ({
     fontSize: "1.7vh"
   },
   lines : {
-    color: "#c3c3c3",
+    color: "#000000",
     width: "57%",
     opacity: ".40"
   },
   icons : {
-    color: "#c3c3c3",
+    color: "#000000",
   },
   clickedicons : {
     color: "#0084ff",
   },
   icontext : {
-    color: "#c3c3c3",
+    color: "#000000",
     marginLeft: "5px",
     fontSize: "20px"
   },
@@ -82,7 +74,7 @@ const styles = (theme) => ({
     fontSize: "20px"
   },
   reply : {
-    color: "#c3c3c3",
+    color: "#000000",
     transform: "scaleX(-1)"
   },
   iconbutton: {

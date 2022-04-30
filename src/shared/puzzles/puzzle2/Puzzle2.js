@@ -100,8 +100,8 @@ const Puzzle2 = (props) => {
               />
             )}
 
-            <Grid container justifyContent="center" alignItems="center" direction="column" className={classes.textContainer} style={{width: "500px", height: "300px"}}>
-              <CustomForm id={2} password={password}/>
+            <Grid container justifyContent="center" alignItems="center" direction="column" className={classes.textContainer} style={{width: "500px", height: "300px", backgroundColor: "#0085C7"}}>
+              <CustomForm id={2} password={password} textFieldColor="#FFFFFF" buttonColor="#E1EAF2"/>
             </Grid>
           </Grid>
         </Grid>

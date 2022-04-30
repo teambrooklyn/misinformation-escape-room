@@ -28,7 +28,7 @@ const Puzzle4 = () => {
             </span>
           </Grid>
 
-          <div style={{width:"675px", height:"650px", marginTop:"20px"}}>
+          <div style={{width:"675px", height:"650px", marginLeft: "10px", marginTop:"20px"}}>
             {data.nodes.map((node, key)=>{
               return (
                 <Name key={"node-"+key} name={node.id} x={node.x + "px"} y={node.y + "px"}/>
@@ -88,7 +88,7 @@ const Puzzle4 = () => {
           </Typography>
 
           <Grid container direction="column" justifyContent="center" alignItems="center" className={classes.passwordForm}>
-            <CustomForm id={4} password={password}/>
+            <CustomForm id={4} password={password} textFieldColor="#FFFFFF" buttonColor="#B59000"/>
           </Grid>
 
         </Grid>

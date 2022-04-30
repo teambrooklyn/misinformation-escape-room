@@ -81,53 +81,45 @@ const PreUploadPage = (props) => {
       spacing={0}
       className={classes.deviceContainer}
     >
+      <Grid
+        container
+        direction="row"
+        justifyContent="center"
+        alignItems="center"
+        spacing={3}
+        style={{width: "800px"}}
+      >
+          <Grid item xs={12} container
+          direction="column"
+          justifyContent="center"
+          alignItems="center">
+            <video width="70%" height="70%" controls>
+              <source src={props.videoSrc} type="video/webm" />
+            </video>
+          </Grid>
 
-            <Grid className={classes.deviceBackground}
-              container
-              direction="column"
-              justifyContent="center"
-              wrap="nowrap"
-              alignItems="center">
-                <Grid
-                  container
-                  direction="row"
-                  justifyContent="center"
-                  alignItems="center"
-                  spacing={3}
-                  style={{width: "800px"}}
-                >
-                  <Grid item xs={12} container
-                  direction="column"
-                  justifyContent="center"
-                  alignItems="center">
-                    <video width="70%" height="70%" controls>
-                      <source src={props.videoSrc} type="video/webm" />
-                    </video>
-                  </Grid>
-
-                  <Grid
-                  container
-                  spacing={0}
-                  direction="column"
-                  alignItems="center"
-                  justifyContent="center"
-                  >
-                  <div className={classes.wrapper}>
-                    <hr className={classes.lines}></hr>
-                    <Grid
-                    container
-                    direction="row"
-                    alignItems="center"
-                    justifyContent="center"
-                    >
-                      {buttons}
-                    </Grid>
-                    <hr className={classes.lines}></hr>
-                  </div>
-                </Grid>
-                </Grid>
+          <Grid
+          container
+          spacing={0}
+          direction="column"
+          alignItems="center"
+          justifyContent="center"
+          >
+          <div className={classes.wrapper}>
+            <hr className={classes.lines}></hr>
+            <Grid
+            container
+            direction="row"
+            alignItems="center"
+            justifyContent="center"
+            >
+              {buttons}
             </Grid>
+            <hr className={classes.lines}></hr>
+          </div>
         </Grid>
+      </Grid>
+    </Grid>
   );
 };
 

@@ -32,7 +32,7 @@ const Puzzle1 = () => {
           </Alert>
 
           <Grid className={classes.passwordForm}>
-            <CustomForm id={1} password={password}/>
+            <CustomForm id={1} password={password} textFieldColor="#000000" buttonColor="#131CA4"/>
           </Grid>
 
           <IconButton aria-label="lights button" className={classes.lightsIcon} 

@@ -44,14 +44,14 @@ const styles = () => ({
     position:"relative",
     top:"100px"
   },
-
   formButton: {
     width: "280px",
     background: "rgba(112, 112, 112, 0.5)",
     boxShadow: "0px 1px 20px rgba(0, 0, 0, 0.15)",
     borderRadius: "15px",
     border: "none",
-    color: "#0085C7",
+    padding: "10px",
+    color: "#000000",
     cursor: "pointer",
     fontSize: "1.5rem",
     position: "relative",

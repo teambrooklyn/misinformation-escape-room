@@ -128,7 +128,7 @@ const UploadPage = (props) => {
               alignItems="center"
               spacing={0}
               className={classes.deviceBackground}>
-              <Alert color="info">{meta.script[level + 1]}</Alert>
+              {/*<Alert color="info">{meta.script[level + 1]}</Alert>*/}
               <Grid style={{width: "100%", maxWidth: "700px"}} container
                   spacing={0}
                   direction="column"

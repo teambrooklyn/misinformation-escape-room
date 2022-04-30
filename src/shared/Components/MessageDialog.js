@@ -40,10 +40,11 @@ const MessageDialog = ({textContent, openDialog, setOpenDialog, isSecondDialog})
       </Grid>
     } else {
       content = (
-      <Grid container direction="column" alignItems="center" justifyContent="flex-start">
+      <Grid container direction="row" alignItems="center" justifyContent="flex-start">
         <Grid className={classes.backgroundContainer} style={{ backgroundImage: `url(/images/message/dialog_devices/iphone${level}${isSecondDialog ? ".5" : ""}.png)` }}>
           <p className={classes.textbox}>{textContent}</p>
         </Grid>
+        <button className={classes.closeDialogButton} onClick={setOpenDialog}>X</button>
       </Grid>
       )
     }

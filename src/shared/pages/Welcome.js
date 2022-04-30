@@ -118,7 +118,7 @@ const WelcomeCommon = (props) => {
                 marginBottom: theme.spacing(2), }}
               >   <img
                     src={`${public_url}/images/laannlogo.png`}
-                    alt="La'Ann Olympics Logo"
+                    alt="La'Ann 2050 Olympics Logo"
                     style={{ height: "160px", width: "auto" }}
                   ></img>
                 </Paper>
@@ -173,9 +173,7 @@ const Welcome = () => {
       <>
         <Typography component="p" variant="body1" align="center" className={classes.paragraph}>
           {terms}
-        </Typography>
-        <Typography component="p" variant="body1" align="center" className={classes.paragraph}>
-          {policy.text + " "}
+          {" " + policy.text + " "}
           <Link color="inherit" href={policy.url}>
             {policy.url}
           </Link>
