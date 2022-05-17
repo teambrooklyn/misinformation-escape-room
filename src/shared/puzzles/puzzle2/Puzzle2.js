@@ -49,7 +49,7 @@ const Puzzle2 = (props) => {
                   <div key={key} style={{marginLeft: "60px", marginRight: "60px", marginTop: "30px"}}>
                     <Grid container direction="row" alignItems="center">
                       <div>
-                        <CustomImgLightbox img={"/images/puzzle2/folder.png"} alt={data[key] + "folder"} width="135px" height="110px" src={public_url + src} padding={50}/>
+                        <CustomImgLightbox img={public_url + "/images/puzzle2/folder.png"} alt={data[key] + "folder"} width="135px" height="110px" src={public_url + src} padding={50}/>
                         <Typography
                           component="p"
                           variant="body1"

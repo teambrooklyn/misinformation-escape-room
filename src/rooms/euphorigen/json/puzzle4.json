@@ -3,12 +3,10 @@
   "puzzleText": {
     "title": "Figure out how the misinformation spread to get to the next step. You’ll want to trace how each story below spread individually, rather than all of them together",
     "main": [
-      "Paul shared with Nate, who shared with Josh, who shared with Taylor, who shared with Maddy, who shared with Paul",
-      "Jules shared with Nate, who shared with Taylor, who shared with Cal, who shared with Taylor, who shared with Paul, who shared with Cassie",
-      "Andrew shared with Maddy, who sared with Taylor, who shared with Steph",
-      "Steph shared with Nate, who shared with Grace, who shared with Taylor, who shared with Cal",
-      "Paul shared with Cindy, who shared with Jason, who shared with Steph, who shared with Paul, who shared with Peter",
-      "Nate shared with Josh, who shared with Jules, who shared with Cindy"
+      "Nate shared with Krystal, who shared with Andrew, who shared with Cindy and Taylor.",
+      "Steph shared with Nate, who shared with Josh, who shared with Taylor and Cassie.",
+      "Allie shared with Peter, who shared with Paul, who shared with Nate and Maddy.",
+      "Josh shared with Grace, who shared with Jules, who shared with Nate, who shared back with Josh, who shared with Maddy, who shared with Cal."
     ]
   },
   "message": "Oh no! The video you shared is a deep fake video! You shouldn’t have shared it! Now the misinformation is spreading like wildfire on social media. The researcher who contacted you wants you to trace the information pathways to try to stop this!",

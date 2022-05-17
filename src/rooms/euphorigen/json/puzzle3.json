@@ -2,71 +2,73 @@
   "name": "Voicemails",
   "puzzleText": {
     "main": [
-      "All of these voicemails all of a sudden! But something seems fishy here... although all of these voicemails make themselves sound urgent, some of these voicemails could be based completely in opinions without any facts supporting them! You may want to look for messages that are:",
-      "Give them a listen and lets figure out who’s really trying to get ahold of Molina!"
+      "All of these voicemails all of a sudden! But something seems fishy here... although all of these voicemails make themselves sound urgent, some of these voicemails could be based on opinions without any facts supporting them! You may want to look for messages that are:",
+      "Give them a listen and figure out which voicemails to ignore. Once you find out which voicemails are illegitimate, it will lead you to the code word."
     ],
     "bullets": [
-      "Vague in language and details",
-      "Based in rumors",
-      "More sensationalist"
+      "Inconsistent",
+      "Vague in Language and Details",
+      "Based in Rumors",
+      "Exaggerated",
+      "Based in Verifiably Incorrect Details"
     ]
   },
   "calls": [
     {
-      "number": "+403 (340) 392-1718",
+      "number": "(340) 392-1718",
       "location": "Misala, La’Ann",
       "date": "Yesterday",
-      "duration": "00:38",
+      "duration": "00:18",
       "audio_file": "/audio/puzzle3/voicemail_1.mp3",
-      "transcription": "“Hi Molina, this is the Headmaster of the La’Ann Olympics. We are reaching out to you to notify you of your summons to the Olympic Advisory board meeting. Due to the urgency of the meeting, please call +403 (340) 392-1718 as soon as possible to confirm your intent to attend this meeting. Additionally, please prepare your government-issued ID and social security number to verify your identity over the phone. If we do not hear from you in 24 hours, you will be disqualified and banned. Thank you.”"
+      "transcription": "“Hi Melody, this is the Headmaster of the La'Ann Olympics. We are reaching out to you to notify you of your summons to the Olympic Advisory board meeting. Upon arrival, please prepare your law and issued ID, social security number, and birth certificate to verify your identity over the phone. Thank you.”"
     },
     {
-      "number": "+403 (502) 101-5617",
+      "number": "(502) 101-5617",
       "location": "Gorsha, La’Ann",
       "date": "Yesterday",
-      "duration": "00:20",
+      "duration": "00:12",
       "audio_file": "/audio/puzzle3/voicemail_2.mp3",
-      "transcription": "“Hi, this is Timothee Holland, the lead investigator for the International Olympic Committee. I believe we spoke yesterday. Please rest assured - I am not calling to prosecute you, but just to ask you some questions about some new evidence we found in the case regarding your coach’s fingerprints on Justine Kristoff’s equipment. Call me back when you can.”"
+      "transcription": "“Hi, this is Timothee Holland, the lead investigator for the International Olympic Committee. We spoke yesterday about your case, and I just wanted to call to see if we could ask follow-up questions about some new evidence we found in the case regarding your coach’s fingerprints on Justine Kristoff’s equipment. Call me back when you can.”"
     },
     {
-      "number": "+403 (104) 270-1209",
+      "number": "(104) 270-1209",
       "location": "Senaton, La’Ann",
       "date": "Yesterday",
-      "duration": "00:21",
+      "duration": "00:09",
       "audio_file": "/audio/puzzle3/voicemail_3.mp3",
-      "transcription": "“Hi, it’s Isaac Porza rooting for you back home in Senaton! You’ve come so far since our days training together. However, I’ve gotten word that the Olympic Advisory board has some future penalties in store… I didn’t hear what specifically, but that’s scary! Don’t remember where I heard it either… but I hope you’re holding up!”"
+      "transcription": "“Hi, it’s Isaac rooting for you back home in Lacharta! I heard that the Olympic board has some penalties in store for you… I didn’t hear what specifically or remember where from, but that’s scary! Call me!”"
     },
     {
-      "number": "+403 (340) 143-1219",
+      "number": "(340) 143-1219",
       "location": "Misala, La’Ann",
       "date": "Yesterday",
-      "duration": "00:24",
+      "duration": "00:19",
       "audio_file": "/audio/puzzle3/voicemail_4.mp3",
-      "transcription": "“Molina, sweetie, it’s your aunt. I know you must be super stressed with all the drama, but I wanted to call to tell you that you and the whole La’Ann Olympic Committee could be thrown in international prison for up to 30 years! I read it on Facebook, and I immediately panicked! I don’t want you to go to jail, but I thought I would at least tell you first. Take care sweetie, praying for you.”"
+      "transcription": "“Molina, sweetie, it’s your aunt. I know you must be super stressed, but I wanted to call to tell you that you and the whole La’Ann Olympic Committee could be thrown in prison for up to 30 years! I read it on Facebook and your friend, Isaac even confirmed with me! I don’t want you to go to jail, so I thought I could warn you right now. ”"
     },
     {
-      "number": "+403 (340) 253-9805",
+      "number": "(340) 253-9805",
       "location": "Misala, La'Ann",
       "date": "Yesterday",
-      "duration": "00:11",
+      "duration": "00:05",
       "audio_file": "/audio/puzzle3/voicemail_5.mp3",
-      "transcription": "“Dear customer, this is a message from the Misala City Pharmacy notifying you that your prescription is ready for pick-up. Please review your email for a confirmation on the pick-up details. Thank you.”"
+      "transcription": "“Dear customer, this is a message from the Misala City Pharmacy notifying you that your prescription is ready for pick-up.”"
     },
     {
-      "number": "+403 (414) 607-9111",
+      "number": "(414) 607-9111",
       "location": "Lacharta, La’Ann",
       "date": "Yesterday",
-      "duration": "00:14",
+      "duration": "00:11",
       "audio_file": "/audio/puzzle3/voicemail_6.mp3",
-      "transcription": "“Molina, I can’t believe you and the nation of La’Ann! I’ve heard from someone that the La’Ann athletes have had a history of sabotage in the Olympic Village since 2034. I also heard they have footage of you sneaking around the athletes’ quarters. You should be ashamed.”"
+      "transcription": "“Molina, I can’t believe you and the nation of La’Ann! I’ve heard from someone that the La’Ann athletes have had a history of sabotage in the Olympic Village since 2084. I also heard they have footage of you sneaking around the athletes’ quarters. You should be ashamed!”"
     },
     {
-      "number": "+403 (502) 477-4020",
+      "number": "(502) 477-4020",
       "location": "Gorsha, La’Ann",
       "date": "Yesterday",
-      "duration": "00:36",
+      "duration": "00:19",
       "audio_file": "/audio/puzzle3/voicemail_7.mp3",
-      "transcription": "“Molina! This is Professor Iskabov from your alma mater. I got your number from one of your old professors. I needed to contact you because my lab has been doing research recently on the same chemical traces found in Justine’s bloodstream after the race. My lab and a few others had previously published some papers around the chemical and its usage - lemme tell you, it’s not easy to obtain. You need some sort of special governmental clearance to get the chemical, much higher clearance than you could possibly have. I’ll send you the links to some scholarly articles on the chemical for your review. Call me back if you have any questions! I believe in you.”"
+      "transcription": "“Molina! This is Professor Iskabov from your alma mater. I got your number from one of your old professors. I needed to contact you because my lab has been doing research recently on the same chemical traces found in Justine’s bloodstream after the race. My lab and a few others had previously published some papers around the chemical and its usage. I was wondering if you could review them for me? Call me back at (502) 477-4020 if you have any questions!”"
     }
   ],
   "background": "/images/puzzle3/bg.png",

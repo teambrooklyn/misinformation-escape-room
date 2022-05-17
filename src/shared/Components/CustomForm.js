@@ -37,7 +37,7 @@ const styles = (theme) => ({
 
 const useStyles = makeStyles(styles);
 
-const passwords = ["scandal", "lies", "risk", "betray", "9817"]
+const passwords = ["scandal", "lies", "risk", "fake", "9817"]
 
 const CustomForm = (props) => {
   const [password, setPassword] = useState("");

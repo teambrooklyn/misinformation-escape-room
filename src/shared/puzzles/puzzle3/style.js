@@ -26,7 +26,6 @@ const styles = () => ({
     position:"relative",
     left:"30rem"
   },
-
   instructions: {
     width: "350px",
     background: "rgba(112, 112, 112, 0.5)",
@@ -70,7 +69,7 @@ const styles = () => ({
     position: "relative",
     top: "-180px",
     left:"37px",
-    paddingTop:"5.5rem"
+    paddingTop:"1rem"
   },
   voicemailContainer: {
     height: "3.25em",
@@ -96,20 +95,20 @@ const styles = () => ({
     color: "#8A8A8D",
     position: "relative",
     top: "1.3em",
-    right: "-20em",
+    right: "-23em",
   },
   timeText: {
     fontSize: "13px",
     color: "#8A8A8D",
     position: "relative",
     top: "1.3em",
-    right: "-21em",
+    right: "-24em",
     letterSpacing: "1.5px"
   },
   infoIcon: {
     position: "relative",
     top: "0.6em",
-    right: "-10.7em"
+    right: "-12.7em"
   },
   voicemailPopup: {
     background: `url(${puzzle3.popup})`,
