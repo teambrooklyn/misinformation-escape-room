@@ -88,7 +88,7 @@ const Puzzle3 = () => {
             )}
 
             <Grid className={classes.passwordForm} style={{width: "250px"}}>
-              <CustomForm id={3} password={password} textFieldColor="#000000" buttonColor="#DF0024"/>
+              <CustomForm id={3} password={password} textFieldColor="#0085C7" buttonColor="#DF0024"/>
             </Grid>
           </Grid>
 

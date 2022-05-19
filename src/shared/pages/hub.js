@@ -188,7 +188,7 @@ const Hub = () => {
 };
 
 function getBackgroundPath(level) {
-  let bgPath = "room/main_hub.png"
+  let bgPath = "room/main_hub.svg"
   return bgPath
 }
 
