@@ -28,7 +28,7 @@ const styles = () => ({
   },
   instructions: {
     width: "350px",
-    background: "rgba(112, 112, 112, 0.5)",
+    background: "#E5E5E5",
     boxShadow: "0px 1px 20px rgba(0, 0, 0, 0.15)",
     padding: "1.5em 1.5em 1.5em 1.5em",
     borderRadius: "15px",
@@ -44,6 +44,7 @@ const styles = () => ({
     top:"100px"
   },
   formButton: {
+    backgroundColor:"#E5E5E5",
     width: "280px",
     background: "rgba(112, 112, 112, 0.5)",
     boxShadow: "0px 1px 20px rgba(0, 0, 0, 0.15)",
@@ -54,10 +55,11 @@ const styles = () => ({
     cursor: "pointer",
     fontSize: "1.5rem",
     position: "relative",
-    top: "-7em"
+    top: "-7em",
+    color:"#0085C7"
   },
   passwordForm: {
-    backgroundColor: "rgba(112, 112, 112, 0.5)",
+    backgroundColor: "#E5E5E5",
     borderRadius: "14px",
     backgroundBlendMode: "luminosity",
     color: "#0085C7",
@@ -69,7 +71,7 @@ const styles = () => ({
     position: "relative",
     top: "-180px",
     left:"37px",
-    paddingTop:"1rem"
+    paddingTop:"1rem",
   },
   voicemailContainer: {
     height: "3.25em",
