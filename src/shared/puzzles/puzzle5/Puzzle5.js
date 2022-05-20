@@ -49,7 +49,7 @@ const Puzzle5 = () => {
                     src={public_url + images.emoji_math.src}
                     alt={images.emoji_math.src}
                     className={classes.scaleimg}
-                    style={{height:"450px", width:"350px"}}
+                    style={{height:"650px", width:"580px"}}
                   />
                 </Grid>
 
@@ -63,7 +63,7 @@ const Puzzle5 = () => {
               <CustomForm id={5} password={password} textFieldColor="#FFFFFF" buttonColor="#DF0024"/>
             </Grid>
 
-            <Grid container justifyContent="center" alignItems="center" className={classes.contentBg} style={{width: "420px",height: "570px", position:"relative", top:"450px", left:"-145px"}}>
+            <Grid container justifyContent="center" alignItems="center" className={classes.contentBg} style={{width: "420px",height: "720px", position:"relative", top:"450px", left:"-145px"}}>
               <Typography
                 component="div"
                 variant="body1"
@@ -71,21 +71,22 @@ const Puzzle5 = () => {
               </Typography>
 
               {images.inputBoxes.map(({ src, alt }, key) => (
-                <Grid container justifyContent="center" alignItems="center" spacing={0} direction="row" key={key} style={{width: "170px"}}>
+                <Grid container justifyContent="center" alignItems="center" spacing={0} direction="row" key={key} style={{width: "200px"}}>
                   <Grid item xs>
                     <img
                     key={key}
                     src={public_url + src}
                     alt={alt}
                     className={classes.scaleimg}
-                    style={{width:"30px"}}
+                    style={{width:"60px"}}
                   ></img>
                   </Grid>
                   <Grid item xs>
                     <Typography
                     component="div"
                     variant="h4"
-                    style ={{marginTop:"3px"}}>=
+                    style={{marginTop: "-5px", marginLeft: "8px"}}>
+                      =
                     </Typography>
                   </Grid>
                   <Grid item xs>

@@ -22,7 +22,7 @@ const Puzzle3 = () => {
   const [currentVoicemail, setCurrentVoicemail] = useState(null)
   const [isOpen, setIsOpen] = useState(false)
 
-  const code_chart = "/images/puzzle3/Voicemail_code.png";
+  const code_chart = "/images/puzzle3/code_chart.png";
   const info_icon = "/images/puzzle3/info.png";
   const public_url = "";
 
