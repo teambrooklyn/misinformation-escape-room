@@ -116,7 +116,7 @@ const PreUploadPage = (props) => {
                   >
                     Oh my gosh! None of this is true! But how does this look so real?<br/><br/>
 
-                    Did I lose my memory... and acidently poison Justine’s drink without knowing? Did I get a concussion?<br/><br/>
+                    Did I lose my memory... and accidently poison Justine’s drink without knowing? Did I get a concussion?<br/><br/>
 
                     There’s no way!<br/><br/>
 
