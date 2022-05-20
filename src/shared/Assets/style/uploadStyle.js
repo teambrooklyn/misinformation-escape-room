@@ -4,7 +4,7 @@ const public_url = ""; //process.env.PUBLIC_URL;
 
 const styles = (theme) => ({
   deviceContainer: {
-      backgroundImage: `url(${public_url}/images/message/dialog_devices/facebook.png)`,
+      backgroundImage: `url(${public_url}/images/message/dialog_devices/facebook.svg)`,
       backgroundPosition: "center center",
       backgroundSize: "contain",
       backgroundRepeat: "no-repeat",
@@ -89,8 +89,23 @@ const styles = (theme) => ({
     marginLeft: "5px",
     fontSize: "20px"
   },
-  placeholder : {
+  placeholder: {
     height: "2px"
+  },
+  thoughtBubble: {
+    position: "absolute",
+    textAlign: "center",
+    backgroundImage: `url(${public_url}/images/message/thought_bubble.svg)`,
+    backgroundSize: "contain",
+    backgroundRepeat: "no-repeat",
+    backgroundPosition: "center",
+    height: "700px",
+    width: "800px"
+  },
+  thoughtBubbleText: {
+    width: "400px",
+    marginTop: "210px",
+    marginLeft: "190px",
   }
 });
 

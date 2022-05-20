@@ -10,7 +10,7 @@ import CustomImgLightbox from "@/shared/Components/CustomImgLightbox.js";
 import styles from "./style";
 import Lightbox from "react-image-lightbox";
 
-const binary_chart = "/images/puzzle2/binary_chart.png";
+const binary_chart = "/images/puzzle2/binary_chart.svg";
 // TODO: change to props
 const puzzle2 = require("../../../rooms/euphorigen/json/puzzle2.json");
 

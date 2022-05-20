@@ -23,6 +23,7 @@ const WelcomeCommon = (props) => {
   let history = useHistory();
 
   const [password, setPassword] = useState();
+  const [storyPanel, setStoryPanel] = useState(0);
   const handlePwChange = (e) => setPassword(e.target.value);
 
   const public_url = process.env.PUBLIC_URL;
@@ -90,7 +91,7 @@ const WelcomeCommon = (props) => {
   };
 
     return (
-      <Container style={{ backgroundImage: "url(/images/laannbg1.png)", maxWidth:"unset", backgroundPosition:"center", overflow:"auto"}}>
+      <Container style={{ height: "100%", backgroundImage: "url(/images/laannbg1.svg)", backgroundSize: "150% auto", backgroundRepeat: "no-repeat", maxWidth:"unset", overflow:"auto"}}>
         <Container component="main" maxWidth="md">
           <Grid
             container
@@ -101,60 +102,87 @@ const WelcomeCommon = (props) => {
             style={{ minHeight: "90vh" }}
           >
             <Paper
-              elevation={3}
+              elevation={0}
               className={classes.card}
               style={{
-                background: "#FFFFFF",
+                background: "transparent",
                 width: theme.spacing(70),
                 height: theme.spacing(20),
-                margin: theme.spacing(4),
+                marginBottom: "50px",
                 padding: theme.spacing(4),
               }}
             >
               <Paper
-                elevation={3}
+                elevation={0}
                 className={classes.card}
-                style={{ background: "#fafafa", width: "100%", height: "100%", marginTop: theme.spacing(2),
-                marginBottom: theme.spacing(2), }}
+                style={{ background: "#FFFFFF", width: "160px", height: "100%", marginTop: theme.spacing(2),
+                marginBottom: theme.spacing(2), padding: "25px", borderRadius: "50%"}}
               >   <img
                     src={`${public_url}/images/laannlogo.png`}
                     alt="La'Ann 2050 Olympics Logo"
                     style={{ height: "160px", width: "auto" }}
                   ></img>
                 </Paper>
-              </Paper>
+              </Paper> 
 
             <Typography
               component="p"
               variant="body1"
               align="center"
               className={classes.paragraph}
+              style={{width: "100%", fontSize: (storyPanel == 0 ? "4rem" : "1.5rem")}}
             >
-              {abstract}
+              {abstract[storyPanel]}
             </Typography>
+            <Grid container direction="row">
+              { storyPanel > 0 &&
+                <Button
+                  variant="contained"
+                  size="small"
+                  color="primary"
+                  onClick={() => setStoryPanel(storyPanel - 1)}
+                  style={{marginLeft: "0", marginRight: "auto"}}
+                >
+                  Previous
+                </Button>
+              }
+              { storyPanel < 3 &&
+                <Button
+                  variant="contained"
+                  size="small"
+                  color="primary"
+                  onClick={() => setStoryPanel(storyPanel + 1)}
+                  style={{marginLeft: "auto", marginRight: "0"}}
+                >
+                  Next
+                </Button>
+              }
+            </Grid>
             {props.children}
-            <form
-              className={classes.form}
-              autoComplete="off"
-              onSubmit={handleSubmit}
-              onChange={handlePwChange}
-            >
-              <TextField
-                id="standard-basic"
-                label="Enter Password"
-                required
-                className={classes.button}
-              />
-              <Button
-                type="submit"
-                variant="contained"
-                size="small"
-                color="primary"
-                style={{marginTop: "15px", marginLeft: "5px"}}
+            { storyPanel == 3 &&
+              <form
+                className={classes.form}
+                autoComplete="off"
+                onSubmit={handleSubmit}
+                onChange={handlePwChange}
               >
-                Enter
-              </Button>
-            </form>
+                <TextField
+                  id="standard-basic"
+                  label="Enter Password"
+                  required
+                  className={classes.button}
+                />
+                <Button
+                  type="submit"
+                  variant="contained"
+                  size="small"
+                  color="primary"
+                  style={{marginTop: "15px", marginLeft: "5px"}}
+                >
+                  Enter
+                </Button>
+              </form>
+            }
           </Grid>
         </Container>
       </Container>
@@ -165,7 +193,7 @@ const WelcomeCommon = (props) => {
 const Welcome = () => {
   const classes = useStyles();
   const location = useLocation();
-  const isPublic = location.pathname.includes("public");
+  const isPublic = true; //location.pathname.includes("public");
 
   return (
     <WelcomeCommon>

@@ -23,6 +23,6 @@
       { "src": "/images/puzzle2/part_3.png", "alt": "alt" },
       { "src": "/images/puzzle2/part_4.png", "alt": "alt" }
     ],
-    "backgroundImg": "/images/puzzle2/bg.png"
+    "backgroundImg": "/images/puzzle2/bg.svg"
   }
 }

@@ -24,7 +24,7 @@ const Puzzle5 = () => {
       <Grid className={classes.backgroundImg}>
         <Grid container justifyContent="center" alignItems="center" wrap="nowrap" className={classes.content}>
           <Grid className="messageNote">
-             <img src={"/images/puzzle5/coach.png"} style={{height: "8em", position:"relative", left:"970px", top:"-148px", borderRadius:"15px"}}/>
+             <img src={"/images/puzzle5/coach.svg"} style={{height: "8em", position:"relative", left:"970px", top:"-148px", borderRadius:"15px"}}/>
           </Grid>
 
           <Grid container direction="column" justifyContent="center" alignItems="center" wrap="nowrap" className={classes.window}>

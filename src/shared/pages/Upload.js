@@ -117,7 +117,9 @@ const UploadPage = (props) => {
               style: {
                 backgroundColor: 'transparent',
                 boxShadow: 'none',
-                width: "80vw"
+                width: "80vw",
+                height: "50vw",
+                marginTop: "225px"
               },
                 }}
           >

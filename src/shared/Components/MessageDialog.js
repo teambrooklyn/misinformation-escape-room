@@ -11,7 +11,7 @@ import { getWithExpiry } from "@/shared/UtilityFunctions";
 
 const useStyles = makeStyles(style)
 
-const MessageDialog = ({textContent, openDialog, setOpenDialog, isSecondDialog}) => {
+const MessageDialog = ({textContent, openDialog, setOpenDialog, isSecondDialog, hasVideo}) => {
 
     const location = useLocation()
 
@@ -41,10 +41,13 @@ const MessageDialog = ({textContent, openDialog, setOpenDialog, isSecondDialog})
     } else {
       content = (
       <Grid container direction="row" alignItems="center" justifyContent="flex-start">
-        <Grid className={classes.backgroundContainer} style={{ backgroundImage: `url(/images/message/dialog_devices/iphone${level}${isSecondDialog ? ".5" : ""}.png)` }}>
+        <Grid className={classes.backgroundContainer} style={{ backgroundImage: `url(/images/message/dialog_devices/iphone${level}${isSecondDialog ? ".5" : ""}.svg)` }}>
           <p className={classes.textbox}>{textContent}</p>
         </Grid>
         <button className={classes.closeDialogButton} onClick={setOpenDialog}>X</button>
+        { hasVideo && (
+            <button className={classes.videoText} onClick={setOpenDialog}></button>
+          )}
       </Grid>
       )
     }

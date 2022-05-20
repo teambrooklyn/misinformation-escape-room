@@ -178,6 +178,7 @@ const Hub = () => {
                 openDialog={openMessageDialog}
                 setOpenDialog={handleCloseMessageDialog}
                 isSecondDialog={((level == 4 && preUploadVideoWatched) || (level == 5 && preCorrectVideoWatched))}
+                hasVideo={!((level == 4 && preUploadVideoWatched) || (level == 5 && preCorrectVideoWatched))}
               />
 
             </Grid>
@@ -188,7 +189,7 @@ const Hub = () => {
 };
 
 function getBackgroundPath(level) {
-  let bgPath = "room/main_hub.png"
+  let bgPath = "room/main_hub.svg"
   return bgPath
 }
 

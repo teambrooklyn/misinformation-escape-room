@@ -86,5 +86,5 @@
     "main": [{ "src": "/images/puzzle4/main.png", "alt": "alt" }],
     "sub": [{ "src": "/images/puzzle4/1.png", "alt": "alt" }]
   },
-  "background": "/images/puzzle4/bg.png"
+  "background": "/images/puzzle4/bg.svg"
 }

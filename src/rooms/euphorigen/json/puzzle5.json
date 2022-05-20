@@ -8,7 +8,7 @@
     "emojiInputPrompt": "You may keep track of your work here"
   },
   "images": {
-    "emoji_math": { "src": "/images/puzzle5/emoji_math.png", "alt": "alt" },
+    "emoji_math": { "src": "/images/puzzle5/emoji_math.svg", "alt": "alt" },
     "sub": [
       { "src": "/images/puzzle5/1.png", "alt": "alt" },
       { "src": "/images/puzzle5/2.png", "alt": "alt" },
@@ -29,7 +29,7 @@
       { "src": "/images/puzzle5/Asset 20.png", "alt": "smiling happy emoji" }
     ]
   },
-  "background": "/images/puzzle5/fb_bg.png",
+  "background": "/images/puzzle5/fb_bg.svg",
   "postBox": "/images/puzzle5/post_box.svg",
   "postImg": "/images/puzzle5/post_img.svg",
   "siteBg": "/images/puzzle5/site_bg.svg",

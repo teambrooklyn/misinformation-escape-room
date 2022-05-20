@@ -21,7 +21,7 @@
     {"text":"“The Olympic staff members are poisoning the food in the Olympic Village”. The Olympic athlete shares their experience.", "letterIndex": 87, "letter": "a"},
     {"text":"Are athletes representing their country in the Olympics being well compensated? New research suggests that 58% did not consider themselves financially stable.", "letterIndex": 65, "letter": "l"}
   ],
-  "background": "/images/puzzle1/Puzzle1_bg.png",
+  "background": "/images/puzzle1/Puzzle1_bg.svg",
   "headlineBackground": "/images/puzzle1/headline_bg.png",
   "initialPosition": [
     {"x": -1100, "y": 820},

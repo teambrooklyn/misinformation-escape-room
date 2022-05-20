@@ -14,13 +14,13 @@ const solutionImage = `${process.env.PUBLIC_URL}/images/puzzle5/3.png`;
 
 export const PreUploadFake = () => {
   return (
-    <PreUpload videoSrc={fake}/>
+    <PreUpload videoSrc={fake} fake={true}/>
   );
 };
 
 export const PreCorrect = () => {
   return (
-    <PreUpload videoSrc={real}/>
+    <PreUpload videoSrc={real} fake={false}/>
   );
 };
 
