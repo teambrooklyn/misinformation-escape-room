@@ -1,10 +1,10 @@
 {
     "navItem": [{
-        "top": "20",
-        "left": "485",
+        "top": "-25",
+        "left": "360",
         "size": {
-            "width": "15",
-            "height": "60"
+            "width": "125",
+            "height": "90"
         }
     },
     {
@@ -45,8 +45,8 @@
     },
     "lightingPosition": [
         {
-            "top": "-55",
-            "left": "520"
+            "top": "-95",
+            "left": "460"
         },
         {
             "top": "-95",
